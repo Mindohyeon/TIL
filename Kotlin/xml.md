@@ -2,6 +2,29 @@
 
 > <>태그로 감싼 태그요소와 태그 안에서 '항목명 = 값 형식'을 지정하는 속성으로 이루어진다  
 + 되도록이면 처음 시작 태그를 LinearLayout로 시작해야 Layout이 깔끔하고, 다른 사람과 공유했을 때도 올바르게 실행된다.
++ 드래그로 xml을 만들지 말자  
+-> 드래그로 만들면 다른 사람과 공유했을 때 올바르게 실행되지   않는다.
+
+## margin 과 padding 의 차이
+
+### margin
+부모 레이아웃과 ImageView 위젯에 20dp의 여백을 가진다.
+
+```kotlin
+     <ImageView
+        android:layout_width="280dp"
+        android:layout_height="230dp"
+        android:layout_margin="20dp"
+```
+
+### padding
+ImageView의 테두리로부터 Image의 사이에 20dp의 여백을 가진다.
+ ```kotlin
+     <ImageView
+        android:layout_width="280dp"
+        android:layout_height="230dp"
+        android:padding="20dp"
+```
 
 > width = 폭,가로  
 > height = 높이  
@@ -12,7 +35,7 @@ manifest = 나타내다, 드러내다
 app -> manifests ->AndroidManifest.xml  
 
 > 해당 어플리케이션에 대한 필수적인 정보들을 안드로이드 시스템에 알려준다.
-
+---
 ## themes.xml  
 > Themes는 앱의 전체 style을 지정한다.  
 버튼 등 모든것들의 기본 색이나 사이즈가 나와있다.
@@ -20,8 +43,21 @@ app -> manifests ->AndroidManifest.xml
 ```kotlin
 <item name="windowNoTitle">true</item>
 ```
+---
+## colors.xml
+color의 색을 만들 수 있다.
+> 방법
+1. 원하는 색 이름을 쓴다
+2. #ffffffff(이건 아무거나 적어도 나중에 자동으로 바뀜)로 적고  몇번 째 줄인지 알려주는 곳을 클릭하여 색을 선택한다.
+```
+<color name="색 이름">#ffffffff</color>
+```
 
 
+```kotlin
+    <color name="white">#FFFFFFFF</color>
+ ```
+ ---
 ### 주석
 + <> 밖에 주석을 작성할 경우 오류가 발생하지 않음
 > 옳은 주석 방법
@@ -41,6 +77,7 @@ app -> manifests ->AndroidManifest.xml
         android:layout_height="match_parent"
         <!--여기는 오류가 발생!! -->>
 ```
+
 ---
 ## 태그 종류
 
@@ -85,8 +122,23 @@ horizontal = 수평<br>
 > + width와 height로 크기를 설정
 > + 나타낼 text를 작성
 
-### 4. ImageView
+### 4. EditText
++ 사용자가 텍스를 입력할 수 있는 기능을 제공한다.
+android:hint="어떤 걸 입력해야 할지"  
+hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있다.
+```kotlin
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="입력해주세요.">
+
+            </EditText>
+```
+
+### 5. ImageView
 + 이미지를 띄워준다.
+
  >#### 방법
  1. drawable에 띄우고 싶은 사진을 드래그해 넣는다.
  2. 띄우고 싶은 xml에 ImageView를 만들고   
@@ -100,8 +152,27 @@ horizontal = 수평<br>
         android:layout_marginTop="240dp"
         android:src="@drawable/logo"/>
 ```  
++ 가끔 오류 발생시 대부분의 이유
+1. drawable 이 아닌 v-24로 이미지가 들어가 있는 경우  
+-> project로 들어가서 v-24에 들어가 있는 이미지를 drawable로 이동시킨다.
+2. 이미지 이름을 대문자 등으로 작성할 경우  
+-> 웬만하면 소문자로 쓰자
 
-### 5. FrameLayout
+### 6. ImageButton
++ Image를 버튼처럼 사용할 수 있다.
++ backgroundcolor를 흰색으로 바꾸면 버튼의 색이 보이지 않아 자연스럽게 보인다.
+```kotlin
+        <ImageButton
+            android:id="@+id/rainbutton"
+            android:layout_width="266dp"
+            android:layout_height="229dp"
+            android:layout_marginTop="225dp"
+            android:layout_marginStart="68dp"
+            android:src="@drawable/logo"
+            android:background="@color/white"/>
+```
+
+### 7. FrameLayout
 + 여러 개의 뷰를 중첩으로 배치할 수 있게 해준다.
 
 > ### 방법
