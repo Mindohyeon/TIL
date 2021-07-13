@@ -88,8 +88,8 @@ color의 색을 만들 수 있다.
 
 ```kotlin
 <Scrollview
-android:layout_width="match_parent"  
-android:layout_height="match_parent">
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent">
 ```  
   <br>
   
@@ -97,9 +97,9 @@ android:layout_height="match_parent">
 + 스크롤을 가로로할지 세로로할지 정함
 ```kotlin
 <LinearLayout
-android:layout_width="match_parent"  
-android:layout_height="match_parent">
-android:orientation="vertical" >
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent">
+    android:orientation="vertical" >
 </LinearLayout>
 ```
 
@@ -113,10 +113,10 @@ horizontal = 수평<br>
 
 ```kotlin
 <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:text="Button2" />
+    android:id="@+id/button2"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:text="Button2" />
 ```
 > + button 의 id를 만들어줘야 불러올 수 있음
 > + width와 height로 크기를 설정
@@ -127,13 +127,13 @@ horizontal = 수평<br>
 android:hint="어떤 걸 입력해야 할지"  
 hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있다.
 ```kotlin
-            <EditText
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:hint="입력해주세요.">
+<EditText
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:hint="입력해주세요.">
 
-            </EditText>
+</EditText>
 ```
 
 ### 5. ImageView
@@ -162,29 +162,29 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
 + Image를 버튼처럼 사용할 수 있다.
 + backgroundcolor를 흰색으로 바꾸면 버튼의 색이 보이지 않아 자연스럽게 보인다.
 ```kotlin
-        <ImageButton
-            android:id="@+id/rainbutton"
-            android:layout_width="266dp"
-            android:layout_height="229dp"
-            android:layout_marginTop="225dp"
-            android:layout_marginStart="68dp"
-            android:src="@drawable/logo"
-            android:background="@color/white"/>
+<ImageButton
+    android:id="@+id/rainbutton"
+    android:layout_width="266dp"
+    android:layout_height="229dp"
+    android:layout_marginTop="225dp"
+    android:layout_marginStart="68dp"
+    android:src="@drawable/logo"
+    android:background="@color/white"/>
 ```
 
 ### 7. FrameLayout
 + 여러 개의 뷰를 중첩으로 배치할 수 있게 해준다.
 
-> ### 방법
+#### 방법
 1. FrameLayout 안에 중첩시킬 뷰를 넣는다.
 2. 가장 앞에 보일 뷰를 가장 아래에 배치시킨다.
 
 
-```kotlin
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </FrameLayout>
+```Kotlin
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+</FrameLayout>
 ```
 
 

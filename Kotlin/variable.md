@@ -12,6 +12,14 @@ var b : Char = 'a' // b = 'a'
 
 ## val
 
+- 읽기만 가능한 변수
+- 할당 후 변경이 불가능하다.
+
+```kotlin
+val b : Int = 10
+b = 30  //오류 발생
+```
+
 ## type
 
 - String
