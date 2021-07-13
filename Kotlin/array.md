@@ -24,4 +24,3 @@ fun main(args: Array<String>){
 }
 ```
 get 함수나 set 함수는 []로 바뀔 수 있다.
-
