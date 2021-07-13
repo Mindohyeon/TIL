@@ -142,6 +142,7 @@ fun checkNum(score : Int) {
 
 > 선언방법
 + 변수명 in 시작값..마지막값
++ 
 ```kotlin
  var sum : Int = 0
     for(i in 1.. 10){ 
