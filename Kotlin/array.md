@@ -22,3 +22,6 @@ fun main(args: Array<String>){
     println(a[1])       // 200
     println(a[2])       // 3
 }
+```
+get 함수나 set 함수는 []로 바뀔 수 있다.
+
