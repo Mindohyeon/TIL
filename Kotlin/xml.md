@@ -1,9 +1,45 @@
 ## XML
 
 > <>태그로 감싼 태그요소와 태그 안에서 '항목명 = 값 형식'을 지정하는 속성으로 이루어진다  
-+ 되도록이면 처음 시작 태그를 LinearLayout로 시작해야 Layout이 깔끔하고, 다른 사람과 공유했을 때도 올바르게 실행된다.
++ 되도록이면 처음 시작 태그를 LinearLayout로 시작해야 Layout이 깔끔하다.
 + 드래그로 xml을 만들지 말자  
--> 드래그로 만들면 다른 사람과 공유했을 때 올바르게 실행되지   않는다.
+-> 드래그로 만들면 다른 사람과 공유했을 때 올바르게 실행되지   않는다. 또한 실력이 잘 늘지 않는다.  
+
+## 기준점
+- 기준점이 없는 경우
+```kotlin
+  <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼 1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼 2"
+        />
+```
+실행할 경우에 버튼 1과 버튼 2가 겹쳐서 보여진다.
+
+- 기준점이 있는 경우
+```kotlin
+   <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼 1"
+        android:id="@+id/btn1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼 2"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        />
+```
+버튼 1이 버튼 2 위로 붙는다. 즉 버튼 1과 2가 모두 잘 보인다.  
+
 
 ## margin 과 padding 의 차이
 
