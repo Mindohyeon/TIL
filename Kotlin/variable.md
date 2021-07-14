@@ -15,9 +15,23 @@ var b : Char = 'a' // b = 'a'
 - 읽기만 가능한 변수
 - 할당 후 변경이 불가능하다.
 
-```kotlin
+```kotlin           
 val b : Int = 10
 b = 30  //오류 발생
+```
+
+## null
+
+- 코틀린의 기본 변수는 null값을 가질 수 없다.
+```kotlin
+var temp: String = "ABCD"
+temp = null // 문법 오류
+```
+
+- return type 에 ? 가 붙으면, return type 이 null 이 될 수 있다는 의미이다.
+ ```kotlin
+var temp: String? = "ABCD"
+temp = null
 ```
 
 ## type
