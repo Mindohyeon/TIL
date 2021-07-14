@@ -38,13 +38,16 @@
         app:layout_constraintTop_toBottomOf="@+id/btn1"
         />
 ```
-버튼 1이 버튼 2 위로 붙는다. 즉 버튼 1과 2가 모두 잘 보인다.  
-
+버튼 1이 버튼 2 위로 붙는다.
+``` 
+버튼1  
+버튼2
+```
 
 ## margin 과 padding 의 차이
 
 ### margin
-부모 레이아웃과 ImageView 위젯에 20dp의 여백을 가진다.
+부모 레이아웃과 ImageView 위젯에 여백을 가진다.
 
 ```kotlin
      <ImageView
@@ -54,7 +57,7 @@
 ```
 
 ### padding
-ImageView의 테두리로부터 Image의 사이에 20dp의 여백을 가진다.
+ImageView의 테두리로부터 Image의 사이에 여백을 가진다.
  ```kotlin
      <ImageView
         android:layout_width="280dp"
@@ -113,7 +116,6 @@ color의 색을 만들 수 있다.
         android:layout_height="match_parent"
         <!--여기는 오류가 발생!! -->>
 ```
-
 ---
 ## 태그 종류
 
@@ -130,7 +132,7 @@ color의 색을 만들 수 있다.
   <br>
   
 ### 2. LinearLayout
-+ 스크롤을 가로로할지 세로로할지 정함
++ 가로로 정렬할지 세로로 정렬할지 결정한다.
 ```kotlin
 <LinearLayout
     android:layout_width="match_parent"  
