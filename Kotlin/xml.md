@@ -43,7 +43,7 @@
 버튼1  
 버튼2
 ```
-
+---
 ## margin 과 padding 의 차이
 
 ### margin
@@ -119,7 +119,7 @@ color의 색을 만들 수 있다.
 ---
 ## 태그 종류
 
-### 1.  Scrollview
+## Scrollview
 + 구현하려는 내용의 높이가 실제 화면의 높이보다 클 때 화면을 스크롤할 수 있도록 하기 위해 사용한다. 
 
 > Scrollview를 사용하여 내용을 감싸주면 화면의 크기보다 내용물이 커질 때 스크롤이 가능해진다.  
@@ -131,7 +131,7 @@ color의 색을 만들 수 있다.
 ```  
   <br>
   
-### 2. LinearLayout
+## LinearLayout
 + 가로로 정렬할지 세로로 정렬할지 결정한다.
 ```kotlin
 <LinearLayout
@@ -146,7 +146,7 @@ vertical = 수직
 horizontal = 수평<br>
   
   
-### 3.  Button
+## Button
 + 버튼을 만든다 
 
 ```kotlin
@@ -160,7 +160,7 @@ horizontal = 수평<br>
 > + width와 height로 크기를 설정
 > + 나타낼 text를 작성
 
-### 4. EditText
+## EditText
 + 사용자가 텍스를 입력할 수 있는 기능을 제공한다.
 android:hint="어떤 걸 입력해야 할지"  
 hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있다.
@@ -174,7 +174,7 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
 </EditText>
 ```
 
-### 5. ImageView
+## ImageView
 + 이미지를 띄워준다.
 
  >#### 방법
@@ -196,7 +196,7 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
 2. 이미지 이름을 대문자 등으로 작성할 경우  
 -> 웬만하면 영어로 소문자만 쓰자  
 
-### 6. ImageButton
+## ImageButton
 + Image를 버튼처럼 사용할 수 있다.
 + backgroundcolor를 흰색으로 바꾸면 버튼의 색이 보이지 않아 자연스럽게 보인다.
 ```kotlin
@@ -210,7 +210,7 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
     android:background="@color/white"/>
 ```
 
-### 7. FrameLayout
+## FrameLayout
 + 여러 개의 뷰를 중첩으로 배치할 수 있게 해준다.
 
 #### 방법
@@ -224,6 +224,11 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
     android:layout_height="wrap_content">
 </FrameLayout>
 ```
+
+## Viewpager
+- 화면을 페이지처럼 좌우로 넘길 때 사용되며, 페이지의 생명주기를 관리하기 위해 ```Fragment```와 함께 쓰이는 경우가 대부분이다.
+
+
 
 
 
