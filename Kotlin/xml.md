@@ -116,6 +116,7 @@ color의 색을 만들 수 있다.
         android:layout_height="match_parent"
         <!--여기는 오류가 발생!! -->>
 ```
+
 ---
 ## 태그 종류
 
@@ -141,9 +142,21 @@ color의 색을 만들 수 있다.
 </LinearLayout>
 ```
 
-> orientation = 수평으로 할지 수직으로 할지 정한다.  
-vertical = 수직  
-horizontal = 수평<br>
+ orientation = 수평으로 할지 수직으로 할지 방향을 정한다.   
+ LinearLayout에 필수적으로 들어가는 요소이다.  
+
+> vertical = 수직  
+> horizontal = 수평<br>
+
+
+## gravity    
+자식 view들의 중력을 결정한다.
+
+#### layout_gravity 
+레이아웃 안에서 어디에 위치할 것인지 정한다.
+
+#### ignoregravity
+gravity 설정 상태에서 특정 자식의 view 속성을 무시한다.
   
   
 ## Button
@@ -227,6 +240,8 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
 
 ## Viewpager
 - 화면을 페이지처럼 좌우로 넘길 때 사용되며, 페이지의 생명주기를 관리하기 위해 ```Fragment```와 함께 쓰이는 경우가 대부분이다.
+
+
 
 
 
