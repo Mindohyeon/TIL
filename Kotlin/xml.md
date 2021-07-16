@@ -150,13 +150,52 @@ color의 색을 만들 수 있다.
 
 
 ## gravity    
-자식 view들의 중력을 결정한다.
+- 자식 view들의 중력을 결정한다.
 
 #### layout_gravity 
 레이아웃 안에서 어디에 위치할 것인지 정한다.
 
 #### ignoregravity
 gravity 설정 상태에서 특정 자식의 view 속성을 무시한다.
+
+
+
+## RelativeLayout
+- 상대적 위치에 하위 뷰를 표시하는 뷰 그룹이다.
+
+#### layout_centerlnParent
+부모 뷰그룹 영역에서 정중앙에 배치된다.
+
+#### layout_alignParentBottom
+부모 뷰그룹 영역에서 하단에 배치된다. (왼쪽)
+
+#### layout_alignParentRingt
+부모 뷰그룹 영역에서 우측에 배치된다. (상단)
+
+#### layout_alignParentEnd
+부모 뷰그룹 영역에서 오른쪽과 해당뷰의 오른쪽을 일치시킨다.
+
+#### layout_centerHorizontal
+부모 뷰그룹의 가로 중앙에 배치한다. (상단)
+
+#### layout_centerVertical
+부모 뷰그룹의 세로 중앙에 정렬한다. (왼쪽)
+
+#### layout_above
+기준이 되는 뷰의 상단에 배치한다. (왼쪽)
+
+#### layout_toRightOf
+기준이 되는 뷰의 오른쪽에 배치한다. (상단)
+
+#### layout_below
+기준이 되는 뷰 하단 아래쪽에 배치한다.
+
+#### layout_toLeftOf
+기준이 되는 뷰 좌측의 왼쪽에 배치한다.
+
+
+
+
   
   
 ## Button
