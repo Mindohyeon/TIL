@@ -294,6 +294,13 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
 
 ## Viewpager
 - 화면을 페이지처럼 좌우로 넘길 때 사용되며, 페이지의 생명주기를 관리하기 위해 ```Fragment```와 함께 쓰이는 경우가 대부분이다.
+  ```
+  <androidx.viewpager.widget.ViewPager
+    android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+  ```
+  ```androidx.viewpager.widget.viewPager```로 태그를 만들어줘야한다.
 
 
 
