@@ -97,6 +97,21 @@ color의 색을 만들 수 있다.
     <color name="white">#FFFFFFFF</color>
  ```
  ---
+
+ drawalbe에서 새로운 xml을 추가하고
+ ```kotlin
+ <?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+//shpae = 모양,형태
+ android:shape="oval">    //oval = 타원
+ <solid
+    android:color="@color/black"/>
+    </shape>
+ ```    
+ 작성시 타원형 모양의 색을 검정색으로 바꿔줄 수 있다.
+
+ ---
+
 ### 주석
 + <> 밖에 주석을 작성할 경우 오류가 발생하지 않음
 > 옳은 주석 방법
