@@ -302,6 +302,16 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
   ```
   ```androidx.viewpager.widget.viewPager```로 태그를 만들어줘야한다.
 
+ ## ListView
+ - 용자가 정의한 데이터 목록을 세로 방향으로 나열하여 화면에 표시하는 뷰 그룹의 한 종류이다.
+
+ ## Adapter
+- 사용자의 데이터를 받아 뷰(View)를 생성해주는 객체이다.
+
+
+ ## RecyclerView
+ - ListView와 매우 비슷하지만 ListView의 경우 수직 방향으로만 아이템을 배열할 수 있지만, RecyclerView의 경우 좌우 방향으로 아이템을 스크롤 하여 보여줄 수 있다.
+
 
 
 
