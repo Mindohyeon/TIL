@@ -295,7 +295,7 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
 
 ## Viewpager
 - 화면을 페이지처럼 좌우로 넘길 때 사용되며, 페이지의 생명주기를 관리하기 위해 ```Fragment```와 함께 쓰이는 경우가 대부분이다.
-  ```
+  ```kotlin
   <androidx.viewpager.widget.ViewPager
     android:id="@+id/viewpager"
         android:layout_width="match_parent"
@@ -312,6 +312,31 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
 
  ## RecyclerView
  - ListView와 매우 비슷하지만 ```ListView```의 경우 수직 방향으로만 아이템을 배열할 수 있지만, ```RecyclerView```의 경우 좌우 방향으로 아이템을 스크롤 하여 보여줄 수 있다.
+
+ ## View Binding
+ - 뷰와 상호 작용하는 코드를 보다 쉽게 작성할 수 있는 기능이다.  
+  
+    build.gradle에서 뷰 바인딩 속성을 활성화하면 해당 모듈에 있는 각각의 XML 레이아웃 파일에 대한 바인딩 클래스가 자동으로 생성된다.
+
+    ```kotlin
+    android {
+        . . .
+        viewBinding{
+            enabled = true
+        }
+    }
+    ```
+    build.gradle에 위의 코드를 작성하면 뷰 바인딩 속성을 활성화 해줄 수 있다.
+
+    - 바인딩 클래스를 생성하는 동안 레이아웃 파일을 무시하려면
+  ```tools:viewBindingIgnore = "true"```속성을 해당 레이아웃 파일의 최상단 루트 뷰에 추가해야한다.  
+
+  ```kotlin
+  <LinearLayout
+        tools:viewBindingIgnore="true" >
+    ...
+</LinearLayout>
+```
 
 
 
