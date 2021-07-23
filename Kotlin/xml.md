@@ -1,9 +1,12 @@
 ## XML
 
 > <>태그로 감싼 태그요소와 태그 안에서 '항목명 = 값 형식'을 지정하는 속성으로 이루어진다  
-+ 되도록이면 처음 시작 태그를 LinearLayout로 시작해야 Layout이 깔끔하다.
-+ 가끔씩 오류가 발생하는데 이유는 ```app:layout_constraintBottom_toBottomOf="parent"```처럼 위치를 고정해주지 않았기 때문. 이걸 쓰면 ignore안 해도 된다.
-+ 드래그로 xml을 만들지 말자  
++ 되도록이면 처음 시작 태그를 LinearLayout로 시작해야 Layout이 깔끔하다. <b>다만</b> LinearLayout으로 시작할 경우 위치를 고정시키는 부분에서 약간 힘들다.
+
++ 가끔씩 오류가 발생하는데 이유는 ```app:layout_constraintBottom_toBottomOf="parent"```처럼 위치를 고정해주지 않았기 때문. 이걸 쓰면 ignore안 해도 된다.  
+또한, view가 2개 이상일 경우 처음부분에 orientation을 작성해주어 가로로 정렬할지 세로로 정렬할지 작성해주어야 한다.
+
+#### 드래그로 xml을 만들지 말자  
 -> 드래그로 만들면 다른 사람과 공유했을 때 올바르게 실행되지   않는다. 또한 실력이 잘 늘지 않는다.  
 
 ## 기준점
