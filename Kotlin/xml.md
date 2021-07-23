@@ -311,7 +311,11 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
 
 
  ## RecyclerView
- - ListView와 매우 비슷하지만 ```ListView```의 경우 수직 방향으로만 아이템을 배열할 수 있지만, ```RecyclerView```의 경우 좌우 방향으로 아이템을 스크롤 하여 보여줄 수 있다.
+ - ListView와 매우 비슷하지만 ```ListView```의 경우 수직 방향으로만 아이템을 배열할 수 있지만, ```RecyclerView```의 경우 좌우 방향으로도 아이템을 스크롤 하여 보여줄 수 있다.
+  
+ - build.gradle에 ```    implementation 'com.android.support:recyclerview-v7:30.0.3'``` 을 작성해주어야 한다.  
+  v7:다음엔 자신의 buildToolsVersion을 작성해주면 된다.
+  
 
  ## View Binding
  - 뷰와 상호 작용하는 코드를 보다 쉽게 작성할 수 있는 기능이다.  
