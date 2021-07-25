@@ -77,15 +77,15 @@ ImageView의 테두리로부터 Image의 사이에 여백을 가진다.
 manifest = 나타내다, 드러내다  
 app -> manifests ->AndroidManifest.xml  
 
-> 해당 어플리케이션에 대한 필수적인 정보들을 안드로이드 시스템에 알려준다.
----
+> 해당 어플리케이션에 대한 필수적인 정보들을 안드로이드 시스템에 알려준다.  
 ## themes.xml  
 > Themes는 앱의 전체 style을 지정한다.  
 버튼 등 모든것들의 기본 색이나 사이즈가 나와있다.
-+ style tag 아래에 작성시 Title Bar가 삭제된다.
 ```kotlin
 <item name="windowNoTitle">true</item>
 ```
+style tag 아래에 작성시 Title Bar가 삭제된다.
+
 ---
 ## colors.xml
 color의 색을 만들 수 있다.
