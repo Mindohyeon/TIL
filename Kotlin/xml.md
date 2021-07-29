@@ -149,7 +149,6 @@ color의 색을 만들 수 있다.
     android:layout_width="match_parent"  
     android:layout_height="match_parent">
 ```  
-  <br>
   
 ## LinearLayout
 + 가로로 정렬할지 세로로 정렬할지 결정한다.
@@ -218,7 +217,7 @@ gravity 설정 상태에서 특정 자식의 view 속성을 무시한다.
   
   
 ## Button
-+ 버튼을 만든다 
+- 버튼을 만든다 
 
 ```kotlin
 <Button
@@ -232,7 +231,7 @@ gravity 설정 상태에서 특정 자식의 view 속성을 무시한다.
 > + 나타낼 text를 작성
 
 ## EditText
-+ 사용자가 텍스를 입력할 수 있는 기능을 제공한다.
+- 사용자가 텍스를 입력할 수 있는 기능을 제공한다.
 android:hint="어떤 걸 입력해야 할지"  
 hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있다.
 ```kotlin
@@ -246,9 +245,9 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
 ```
 
 ## ImageView
-+ 이미지를 띄워준다.
+- 이미지를 띄워준다.
 
- >#### 방법
+ #### 방법
  1. drawable에 띄우고 싶은 사진을 드래그해 넣는다.
  2. 띄우고 싶은 xml에 ImageView를 만들고   
  android:src="@drawable/이름">을 입력하면 이미지가 화면에 보인다.
@@ -268,8 +267,8 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
 -> 웬만하면 영어로 소문자만 쓰자  
 
 ## ImageButton
-+ Image를 버튼처럼 사용할 수 있다.
-+ backgroundcolor를 흰색으로 바꾸면 버튼의 색이 보이지 않아 자연스럽게 보인다.
+- Image를 버튼처럼 사용할 수 있다.
+- backgroundcolor를 흰색으로 바꾸면 버튼의 색이 보이지 않아 자연스럽게 보인다.
 ```kotlin
 <ImageButton
     android:id="@+id/rainbutton"
@@ -282,18 +281,23 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
 ```
 
 ## FrameLayout
-+ 여러 개의 뷰를 중첩으로 배치할 수 있게 해준다.
-
+- 전면에 표시되는 View 이외에도 다양한 View 위젯을 추가할 수 있다.
 #### 방법
-1. FrameLayout 안에 중첩시킬 뷰를 넣는다.
-2. 가장 앞에 보일 뷰를 가장 아래에 배치시킨다.
+```<FrameLayout>```과 ```</FrameLaayout>```사이에 View 위젯을 선언한다.
 
+```kotlin
+  <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-```Kotlin
-<FrameLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-</FrameLayout>
+        <TextView
+            android:id="@+id/Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="TEXT1"
+            android:textSize="30sp"/>
+
+    </FrameLayout>
 ```
 
 ## Viewpager
