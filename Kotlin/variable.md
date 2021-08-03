@@ -23,6 +23,7 @@ b = 30  //오류 발생
 ## null
 
 - 코틀린의 기본 변수는 null값을 가질 수 없다.
+- 변수에 null 값을 넣으려면 타입명 뒤에 ?를 붙이고 null값을 넣어야 한다.
 ```kotlin
 var temp: String = "ABCD"
 temp = null // 문법 오류
