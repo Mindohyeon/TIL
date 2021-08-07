@@ -27,13 +27,29 @@ b = 30  //오류 발생
 ```kotlin
 var temp: String = "ABCD"
 temp = null // 문법 오류
+```   
+```kotlin
+fun main() {
+    var a : String? = "test"
+    print(a.length)
 ```
 
-- return type 에 ? 가 붙으면, return type 이 null 이 될 수 있다는 의미이다.
+- return type 에 ? 가 붙으면, return type 이 null 도 될 수 있다는 의미이다.
  ```kotlin
 var temp: String? = "ABCD"
 temp = null
 ```
+---
+a가 null이 가능한 String 타입일 때, 이와 같이 코드를 작성하면 <b>오류</b>가 발생한다.  
+<b>그 이유는</b>, a가 null 일수도 있기 때문에 안전하지 않기 때문이다.
+```kotlin
+fun main() {
+    var a : String? = "저금통"
+    print(a.length) //오류 발생
+```
+
+
+
 
 ## type
 
