@@ -40,12 +40,17 @@ var temp: String? = "ABCD"
 temp = null
 ```
 ---
-a가 null이 가능한 String 타입일 때, 이와 같이 코드를 작성하면 <b>오류</b>가 발생한다.  
-<b>그 이유는</b>, a가 null 일수도 있기 때문에 안전하지 않기 때문이다.
+a가 null이 가능한 String 타입일 때, 그대로 출력하면 오류가 발생한다.
+
+ <b>그 이유는</b>, a가 null 일수도 있기 때문에 안전하지 않기 때문이다.   
+
+<b>따라서</b>, null 이 아닐때만 호출 할 수 있도록 조건문을 사용해야 한다.
+
 ```kotlin
 fun main() {
-    var a : String? = "저금통"
+    var a : String? = "test"
     print(a.length) //오류 발생
+    if(a != null) print(a.length) // 4 출력
 ```
 
 
