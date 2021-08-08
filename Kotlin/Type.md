@@ -30,6 +30,7 @@ print(b == a)
 <b>즉 , Int 10 과 Long 10 은 다르다.</b>
 
 ### 모든 number type 은 다음과 같은 function 을 통해 변환이 가능하다.
+
 #### toByte()
 다른 number type 의 변수를 Byte 형태로 바꿔준다.
 
@@ -39,13 +40,17 @@ print(b == a)
 #### toInt()
 다른 number type 의 변수를 Int 형태로 바꿔준다.
 
-toLong(): Long
+#### toLong()
+다른 number type 의 변수를 Long 형태로 바꿔준다.
 
-toFloat(): Float
+#### toFloat()
+다른 number type 의 변수를 Float 형태로 바꿔준다.
 
-toDouble(): Double
+#### toDouble()
+ 다른 number type 의 변수를 Double 형태로 바꿔준다.
 
-toChar(): Char
+#### toChar()
+다른 number type 의 변수를 Char 형태로 바꿔준다.
 
 
 
