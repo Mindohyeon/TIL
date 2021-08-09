@@ -35,8 +35,44 @@ type을 명시적으로 작성하지 않으면 Int type 으로 자동 설정된�
 ```kotlin
 val value = 100L //Long type 이라는 의미
 ```
+## Double 
 
+#### Double type : double-precision 64 bit floating point
 
+double-precision 은 8 byte(64 bit) 로 표현되고 ,   
+이 64 bit 는 <b>sign , exponent , fraction bit</b> 로 구성된다.
+
+- sign(S) : 0 번째 bit   
+- exponent(E) : 1 ~ 11 번째 bit   
+- fraction(F) : 나머지 bit
+
+```kotlin
+fun main(args: Array<string>){
+    val value = 1032.1
+    println("$value")
+}
+```
+
+## Float
+
+#### Float type : single-precision 32 bit floating point
+
+single-precision 은 4 byte(32 bit) 로 표현되고 ,   
+ 이 32 bit는 <b>sign , exponent , fraction bit</b> 로 구성된다.   
+이를 표현하기 위해서는 literal constrant 에 <b>F</b>를 붙여야 한다.
+
+- sign(S) : 0번째 bit (부호)   
+- exponent(E) : 1 ~ 8 번째 bit (지수)   
+- fraction (F) : 나머지 bit    
+
+- <b>F</b> 가 없는 Double type 의 literal 은 Float type 에 할당 할 수 없다.
+```kotlin
+fun main(args: Array<string>){
+    val value = 1032.1F
+    value = 1024.2
+    println("$value") //오류 발생
+}
+```
 
 ## 명시적 type 변환
 
