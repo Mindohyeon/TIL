@@ -2,20 +2,40 @@
 
 Java Type | Kotlin Type | Kotlin Type 용량(bit)
 --- | --- | --- 
-double | Double | 64
-float | Float | 32
-long | Long | 64
-int | Int |32
-short | Short | 16
 byte | Byte | 8
-
-
-
+short | Short | 16
+int | Int |32
+long | Long | 64
+float | Float | 32
+double | Double | 64
 
 ## Byte
+
 #### range : -128 ~ 127
 
 일반적으로 memory 사용을 줄이기 위해 [-128, 127] 사이의 integer data를 표현하기 위한 목적으로 <b>Int type 대신 사용된다.</b>
+
+## Short
+
+#### range : -32768 ~ 32767
+
+memory 사용을 줄이기 위해 [-32768, 32767] 사이의 integer data를 표현하기 위한 목적으로 <b>Int type 대신 사용된다.</b>
+
+## Int
+
+#### range : -2147483648 ~ 2147483647
+
+type을 명시적으로 작성하지 않으면 Int type 으로 자동 설정된다.
+
+## Long
+
+#### range : -9223372036854775808 ~ 9223372036854775807
+
+명시적으로 Long type 변수를 사용하려면 <b>'L'</b>을 숫자에 함께 붙여주면 된다.
+```kotlin
+val value = 100L //Long type 이라는 의미
+```
+
 
 
 ## 명시적 type 변환
