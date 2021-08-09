@@ -6,8 +6,9 @@ byte | Byte | 8
 short | Short | 16
 int | Int |32
 long | Long | 64
-float | Float | 32
 double | Double | 64
+float | Float | 32
+
 
 ## Byte
 
@@ -61,11 +62,11 @@ single-precision 은 4 byte(32 bit) 로 표현되고 ,
  이 32 bit는 <b>sign , exponent , fraction bit</b> 로 구성된다.   
 이를 표현하기 위해서는 literal constrant 에 <b>F</b>를 붙여야 한다.
 
-- sign(S) : 0번째 bit (부호)   
-- exponent(E) : 1 ~ 8 번째 bit (지수)   
-- fraction (F) : 나머지 bit    
+- sign(S) : 0번째 bit (부호)
+- exponent(E) : 1 ~ 8 번째 bit (지수)  
+- fraction (F) : 나머지 bit
 
-- <b>F</b> 가 없는 Double type 의 literal 은 Float type 에 할당 할 수 없다.
+<b>F</b> 가 없는 Double type 의 literal 은 Float type 에 할당 할 수 없다.
 ```kotlin
 fun main(args: Array<string>){
     val value = 1032.1F
@@ -73,7 +74,7 @@ fun main(args: Array<string>){
     println("$value") //오류 발생
 }
 ```
-
+---
 ## 명시적 type 변환
 
 ```kotlin
