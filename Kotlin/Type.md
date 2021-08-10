@@ -60,7 +60,19 @@ fun main(args: Array<string>){
 
 single-precision 은 4 byte(32 bit) 로 표현되고 ,   
  이 32 bit는 <b>sign , exponent , fraction bit</b> 로 구성된다.   
-이를 표현하기 위해서는 literal constrant 에 <b>F</b>를 붙여야 한다.
+이를 표현하기 위해서는 literal constant 에 <b>F</b>를 붙여야 한다.
+
+---
+#### literal 이란?
+
+<b>변수의 값이 변하지 않는 데이터</b> (메모리 위치 안의 값)을 의미한다.
+
+
+#### constant (상수) 란?
+
+<b>변하지 않는 변수</b>를 의미하고(메모리 위치) 메모리 값을 변경할 수 없다.
+
+---
 
 - sign(S) : 0번째 bit (부호)
 - exponent(E) : 1 ~ 8 번째 bit (지수)  
