@@ -100,7 +100,6 @@ color의 색을 만들 수 있다.
 ```kotlin
     <color name="white">#FFFFFFFF</color>
  ```
- ---
 
  drawalbe에서 새로운 xml을 추가하고
  ```kotlin
@@ -114,6 +113,13 @@ color의 색을 만들 수 있다.
  ```    
  작성시 타원형 모양의 색을 검정색으로 바꿔줄 수 있다.
 
+ ## string.xml
+ string.xml 에서 resources태그 사이에 원하는 title name을 입력 할 수 있다.
+ ```xml
+ <resources>
+        <string name="app_name">title name</string>
+ </resources>
+ ```
  ---
 
 ### 주석
