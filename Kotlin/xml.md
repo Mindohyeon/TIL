@@ -249,6 +249,8 @@ hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있�
 
 </EditText>
 ```
+- ```android:inputType="number"```로 작성시 숫자만 쓸 수 있다.
+
 
 ## ImageView
 - 이미지를 띄워준다.
