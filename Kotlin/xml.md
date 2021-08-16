@@ -145,6 +145,11 @@ color의 색을 만들 수 있다.
 ---
 ## 태그 종류
 
+## Textview
+
+- 텍스트를 표시할 때 사용한다.
+- ```android:textStyle="bold"``` 작성시 해당 Textview 의 Text 가 bold 체로 바뀌게 된다.
+
 ## Scrollview
 + 구현하려는 내용의 높이가 실제 화면의 높이보다 클 때 화면을 스크롤할 수 있도록 하기 위해 사용한다. 
 
