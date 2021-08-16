@@ -63,7 +63,7 @@ single-precision 은 4 byte(32 bit) 로 표현되고 ,
 이를 표현하기 위해서는 literal constant 에 <b>F</b>를 붙여야 한다.
 
 ---
-#### literal 이란?
+## literal 이란?
 
 <b>변수의 값이 변하지 않는 데이터</b> (메모리 위치 안의 값)을 의미한다.
 
