@@ -186,7 +186,16 @@ color의 색을 만들 수 있다.
 - 자식 view들의 중력을 결정한다.
 
 #### layout_gravity 
-레이아웃 안에서 어디에 위치할 것인지 정한다.
+레이아웃 안에서 어디에 위치할 것인지 정한다.    
+
+---
+
+## gravity 와 layout_gravity 차이점
+
+#### gravity = View 의 내용
+
+#### layout_gravity = VIew의 테두리
+---
 
 #### ignoregravity
 gravity 설정 상태에서 특정 자식의 view 속성을 무시한다.
