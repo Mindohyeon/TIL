@@ -234,11 +234,6 @@ gravity 설정 상태에서 특정 자식의 view 속성을 무시한다.
 
 #### layout_toLeftOf
 기준이 되는 뷰 좌측의 왼쪽에 배치한다.
-
-
-
-
-  
   
 ## Button
 - 버튼을 만든다 
@@ -255,9 +250,8 @@ gravity 설정 상태에서 특정 자식의 view 속성을 무시한다.
 > + 나타낼 text를 작성
 
 ## EditText
-- 사용자가 텍스를 입력할 수 있는 기능을 제공한다.
-android:hint="어떤 걸 입력해야 할지"  
-hint = 이 부분에 어떤 텍스트를 입력해야 할지 알려줄 수 있다.
+- 사용자가 텍스를 입력할 수 있는 기능을 제공한다.   
+```android:hint=""``` "" 안에 보여줄 텍스트를 작성시 가이드 글이 뜬다.(어떤 텍스트를 입력해야 할지)
 ```kotlin
 <EditText
     android:layout_width="180dp"
