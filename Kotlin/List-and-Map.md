@@ -45,3 +45,21 @@ fun main() {
 }
 ```
 MutableList요소를 삭제 할 수 있다.
+
+## remove, removeAll
+
+```kotlin
+fun main() {
+    val mulist: MutableList<Int> = mutableListOf(10,20,16,77,55)
+
+    mulist.remove(10)  //output: 20,16,77,55
+    mulist.remove(100)  //output: 20,16,77,55
+
+    val list: List<Int> = listOf<Int>(1,2,3,20)
+    mulist.removeAll(list)  //output: 16,77,55
+}
+```
+<b>remove</b>는 배열의 해당 요소값을 찾아 삭제하고, true 를 반환한다.
+만약 해당 요소값이 없을 경우에는 값을 유지하며 false 를 반환한다.
+
+
