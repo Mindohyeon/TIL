@@ -8,3 +8,32 @@
 
 #### List : Mutable
 수정 가능한 List는 mutableListOf로 선언한다. listOf와 차이점은 추가 및 삭제가 가능하다. 즉, 읽기/쓰기 모두 가능하다. (add, remove 등)
+
+## MutableList 기능
+- init
+- add, addAll
+- clear
+- iterator, listlterator
+- remove, removeAll
+- removeAt
+- retainAll
+- set
+- subList
+- val,var
+
+## add, addAll
+```kotlin
+fun main() {
+    val mulist : MutableList<Int> = mutableListOf<Int>(10,20,12,36,55)
+
+    mulist.add(100) // 10,20,12,36,55,100
+    mulist.add(3,77)  // 10,20,12,77,36,55,100 (index 3번째 위치에 77 값을 넣는다.)
+
+    val list = listOf<Int>(1,2,3)
+    mulist.addAll(2,list)  //10,20,1,2,3,12,77,36,55,100 (index 2번째 위치에 list에 값을 넣는다.)
+}
+```
+<b>add</b> 를 실행하면 뒤에 붙여지거나 중간위치에 삽입이 가능하다.   
+<b>addAll</b> 를 실행하면 collection 을 중간에 끼워넣을 수 있다.
+
+
