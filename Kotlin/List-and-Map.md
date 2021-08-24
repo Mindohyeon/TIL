@@ -26,14 +26,22 @@
 fun main() {
     val mulist : MutableList<Int> = mutableListOf<Int>(10,20,12,36,55)
 
-    mulist.add(100) // 10,20,12,36,55,100
-    mulist.add(3,77)  // 10,20,12,77,36,55,100 (index 3번째 위치에 77 값을 넣는다.)
+    mulist.add(100) //output: 10,20,12,36,55,100
+    mulist.add(3,77)  //output: 10,20,12,77,36,55,100 (index 3번째 위치에 77 값을 넣는다.)
 
     val list = listOf<Int>(1,2,3)
-    mulist.addAll(2,list)  //10,20,1,2,3,12,77,36,55,100 (index 2번째 위치에 list에 값을 넣는다.)
+    mulist.addAll(2,list)  //output: 10,20,1,2,3,12,77,36,55,100 (index 2번째 위치에 list에 값을 넣는다.)
 }
 ```
 <b>add</b> 를 실행하면 뒤에 붙여지거나 중간위치에 삽입이 가능하다.   
 <b>addAll</b> 를 실행하면 collection 을 중간에 끼워넣을 수 있다.
 
+## clear
 
+```kotlin
+fun main() {
+    val mulist: MutableList<Int> = mutableListOf(10,20,16,77)
+    mulist.clear()  //output: null
+}
+```
+MutableList요소를 삭제 할 수 있다.
