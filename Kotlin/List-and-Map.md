@@ -7,4 +7,4 @@
 - Immutable(불변의) 이기 때문에 get만 가능하다.
 
 #### List : Mutable
-수정 가능한 List는 mutableListOf로 선언한다. listOf와 차이점은 추가 및 삭제가 가능하다. (add, remove 등)
+수정 가능한 List는 mutableListOf로 선언한다. listOf와 차이점은 추가 및 삭제가 가능하다. 즉, 읽기/쓰기 모두 가능하다. (add, remove 등)
