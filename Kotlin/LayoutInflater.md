@@ -1,4 +1,4 @@
-## LayoutInflater 란?
+# LayoutInflater 란?
 
 LayoutInflater 란 안드로이드에서 ```view``` 를 만드는 가장 기본적인 방법이다.
 
