@@ -83,7 +83,10 @@ app -> manifests ->AndroidManifest.xml
 
 > 해당 어플리케이션에 대한 필수적인 정보들을 안드로이드 시스템에 알려준다.  
 ## themes.xml  
-> Themes는 앱의 전체 style을 지정한다.  
+ Themes는 앱의 전체 style을 지정한다.
+     
+ values -> theme 
+
 버튼 등 모든것들의 기본 색이나 사이즈가 나와있다.
 ```kotlin
 <item name="windowNoTitle">true</item>
