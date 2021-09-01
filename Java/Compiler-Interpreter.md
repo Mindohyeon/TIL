@@ -1,7 +1,7 @@
 # Compiler VS Interpreter
 
 ## Compiler
-1. 프로그램 runtime(실행시간) 전에 전체 코드를 검사하여 machine code 로 변환한다.
+1. 프로그램 runtime(실행시간) <b>전에</b> 전체 코드를 검사하여 machine code 로 변환한다.
 
 2. 소스 코드를 <b>분석</b>하는데 <b>많은 시간</b>이 필요하다.
 그러나, <b>전체 실행 시간은 Interpreter 보다 비교적 빠르다.</b>
@@ -22,3 +22,6 @@ C,C++,Java
 3. 중간에 Object Code 가 만들어지지 않기 때문에 메모리 효율이 높다.
 
 4. 첫 오류를 만날 때까지 프로그램을 번역하고, 오류를 만나면 중지한다. 프로그램 실행 전에 오류를 발견하기는 어렵다. 
+
+### Interpreter 를 사용하는 언어 
+Python,Ruby
