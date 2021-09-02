@@ -184,6 +184,11 @@ color의 색을 만들 수 있다.
 > vertical = 수직  
 > horizontal = 수평<br>
 
+## ConstraintLayout
+
+```app:layout_constraintRight_toRightOf=”parent”```
+주로 이런 식으로 쓴다.
+
 
 ## gravity    
 - 자식 view들의 중력을 결정한다.
