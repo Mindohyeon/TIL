@@ -1,4 +1,4 @@
-# 형변환
+# Type Conversion 이란? (형변환)
 
 ```java
 import java.util.Scanner;
