@@ -64,7 +64,7 @@ fun main() {
 만약 해당 요소값이 없을 경우에는 값을 유지하며 false 를 반환한다.
 
 ## val, var
-val 로 선언하든 var 로 선언하든 함수의 추가, 삭제는 가능하다.
+val 로 선언하든 var 로 선언하든 함수의 <b>추가, 삭제는 가능하다.</b>
 
-하지만 val로 선언된 MutableList 는 새로운 MutableList 를 전달받을 수 없다.
+하지만 <b>val</b>로 선언된 MutableList 는 새로운 MutableList 를 전달받을 수 없다.
 
