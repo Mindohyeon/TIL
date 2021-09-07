@@ -17,18 +17,18 @@
 
 ## 자료형
 
-### 기본 자료형
+### 기본 자료형의 기본값
 
 바로 초기화가 가능하다.
 
-- byte
-- short
-- int
-- long
-- char
-- float
-- double
-- boolean
+- byte = 0
+- short = 0
+- int = 0
+- long = 0L
+- float = 0.0f
+- double = 0.0d
+- char = '\u0000'
+- boolean = false
 
 위를 제외하고는 모두 참조 자료형이라고 봐도 무방하다.
 
