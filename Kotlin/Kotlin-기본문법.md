@@ -29,7 +29,7 @@ temp = null // 문법 오류
 ```
 - return type 에 ? 가 붙으면, return type 이 null 이 될 수 있다는 의미이다.
 ```kotlin
-var temp: String? = "ABCD"
+var temp: String? = "ABCD"  
 temp = null
 ```
 
