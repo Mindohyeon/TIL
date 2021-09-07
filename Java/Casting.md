@@ -1,4 +1,5 @@
-# Type Conversion 이란? (형변환)
+# Casting 이란? (형변환)
+서로 다른 타입 사이에서 변환하는 작업을 하는 것
 
 ```java
 import java.util.Scanner;
