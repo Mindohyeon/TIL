@@ -209,6 +209,23 @@ var a : Int = 0
 #### List : Mutable
 수정 가능한 List는 mutableListOf로 선언한다. listOf와 차이점은 추가 및 삭제가 가능하다. (add, remove 등)
 
+# :: (double colon)
+변수나 클래스명 앞에 더블콜론을 명시하면 변수에 대한 속성을 참조할 수 있다.
+
+```kotlin
+var x = 1028
+fun main(args:Array<String>) {
+
+    println(::x.get())
+    println(::x.name)
+}
+```
+output
+```kotlin
+1028
+x
+```
+
 
 
 
