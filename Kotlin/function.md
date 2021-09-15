@@ -78,3 +78,16 @@ fun b(function: (String) -> Unit) {
 - iteration 코드를 구현하는 데 불필요한 부분들을 제거 가능
 
 
+## 스코프 함수
+```instance```의 속성이나 함수를 scope 내에서 깔끔하게 분리하여 사용할 수 있다.
+
+### 종류
+- apply
+- run
+- with
+- also
+- let
+
+
+#### apply
+instance 생성 후 변수에 담기 전에 초기화 할 때 주로 사용
