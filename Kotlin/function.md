@@ -1,6 +1,19 @@
 # 함수
 
 - Java 에서의 void는 Kotlin 에서 Unit이다.
+
+## 함수 형식 자료형으로 표현
+()안에 함수가 받을 ```parameter```의 자료형 작성 후
+-> 반환형쓰기
+
+```kotlin
+// 함수가 받을 parameter 자료형은 String 이고 반환형은 없다
+fun b(function: (String) -> Unit) {
+    
+}
+```
+
+
 ### 선언 방법
 - fun 함수명(변수명 : 변수 타입): 리턴타입
 
@@ -38,7 +51,22 @@ return 값이 없는 함수일 경우 return type을 생략 가능
 함수를 클래스에서 만들어 낸
 ```instance```처럼 취급하는 방법
 
+kotlin 의 모든 함수는 고차함수로 사용 가능.
+
 - 함수를 ```parameter```로 넘겨줄 수 있다.
 - 함수를 결과값으로 반환 받을 수 있다.
+
+```kotlin
+fun main() {
+    
+}
+
+fun a(str: String) {
+    println("$str 함수 a")
+}
+
+fun b(function: (String) -> Unit) {
+    function("b가 호출한")
+}
 
 
