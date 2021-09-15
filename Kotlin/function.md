@@ -90,4 +90,20 @@ fun b(function: (String) -> Unit) {
 
 
 #### apply
-instance 생성 후 변수에 담기 전에 초기화 할 때 주로 사용
+```instance``` 생성 후 변수에 담기 전에 초기화 할 때 주로 사용한다.
+
+```instance``` 자신을 다시 반환하기 때문에 생성되자마자 조작된 ```instance```를 변수에 바로 넣을 수 있다.
+```kotlin
+fun main() {
+    var a = Book("코틀린", 10000).apply {
+        name = "[초특가]" + name
+        discount()
+    }
+
+class Book(var name: String, var price: Int) {
+    fun discount() {
+        price -=2000
+    }
+}
+```
+```instance```의 속성과 함수를 직접 참조 연산자 없이 가능하다
