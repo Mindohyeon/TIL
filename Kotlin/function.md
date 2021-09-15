@@ -9,7 +9,7 @@
 ```kotlin
 // 함수가 받을 parameter 자료형은 String 이고 반환형은 없다
 fun b(function: (String) -> Unit) {
-    
+
 }
 ```
 
@@ -68,5 +68,13 @@ fun a(str: String) {
 fun b(function: (String) -> Unit) {
     function("b가 호출한")
 }
+```
+## 람다 함수
+주로 고차 함수에 ```argument``` 로 전달되거나 고차 함수가 돌려주는 값으로 쓰인다.
+
+### 사용 이유
+- 코드의 간결함
+- 지연 연산을 통한 퍼포먼스 향상
+- iteration 코드를 구현하는 데 불필요한 부분들을 제거 가능
 
 
