@@ -1,6 +1,7 @@
 # Collections
 Collection 은 대부분의프로그래밍 언어에 있는 자료구조다.   
 Java의 List,Map,Set 등을 말한다.
+
 ## List
 
 #### List : Immutable
@@ -58,6 +59,18 @@ fun main() {
 [8 , 1 , 6 , 4]
 [1 , 4 , 6 , 8]
 ```
+
+## Set
+순서가 정렬되지 않고, 중복이 허용되지 않는 컬렉션이다.
+
+- index 로 위치를 지정하여 객체를 참조할 수 없다.
+- contains로 객체가 Set 안에 존재하는지 확인하는 식으로만 사용한다.
+```kotlin
+//sampleSet 에 사과가 있는지 알려줌
+sampleSet.contains("사과")
+```
+
+
 
 ## MutableList 기능
 - init
