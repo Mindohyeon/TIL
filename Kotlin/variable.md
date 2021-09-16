@@ -74,6 +74,43 @@ fun main() {
 ### String
 
 문자열 데이터
+```kotlin
+fun main() {
+
+    val test = "Test.Kotlin.String"
+
+    //test 의 길이
+    println(test.length)
+
+    //소문자로 변환
+    println(test.toLowerCase())
+    //대문자로 변환
+    println(test.toUpperCase())
+
+    //.을 기준으로 자름
+    val test2 = test.split(".")
+    println(test2)
+
+    //그냥 합쳐짐
+    println(test2.joinToString())
+    //-를 넣어 합쳐짐
+    println(test2.joinToString("-"))
+
+    // 일부분만 사용 가능
+    // 5번쨰 값부터 10번째 까지
+    println(test.substring(5..10))
+}
+```
+### output
+```kotlin
+18
+test.kotlin.string
+TEST.KOTLIN.STRING
+[Test, Kotlin, String]
+Test, Kotlin, String
+Test-Kotlin-String
+Kotlin
+```
 
 ### Char
 
