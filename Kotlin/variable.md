@@ -26,6 +26,7 @@ var b : Char = 'a' // b = 'a'
 lateinit var text : String
 ```
 ### lazy
+
 ```kotlin
 val a:Int by lazy {7} 
     ---
@@ -41,6 +42,8 @@ val a : Int by lazy {
 }
 ```
 이렇게 적어도 값은 초기화 된다.
+
+
 ## val
 
 - 읽기만 가능한 변수
