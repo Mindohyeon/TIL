@@ -62,12 +62,40 @@ fun main() {
 
 ## Set
 순서가 정렬되지 않고, 중복이 허용되지 않는 컬렉션이다.
+> List 와 동일하게 추가, 삭제 가능한지 여부에 따라 Set 과 MutableSet도 존재한다.
+> 추가, 삭제도 똑같다.
 
 - index 로 위치를 지정하여 객체를 참조할 수 없다.
 - contains로 객체가 Set 안에 존재하는지 확인하는 식으로만 사용한다.
 ```kotlin
 //sampleSet 에 사과가 있는지 알려줌
 sampleSet.contains("사과")
+```
+
+```kotlin
+fun main() {
+    val a = mutableSetOf("사과","귤","바나나")
+
+    for(item in a) {
+        println("${item}")
+    }
+    a.add("키위")
+    println(a)
+
+    a.remove("바나나")
+    println(a)
+
+    println(a.contains("귤"))
+}
+```
+### output
+```kotlin
+사과
+귤
+바나나
+[사과, 귤, 바나나, 키위]
+[사과, 귤, 키위]
+true
 ```
 
 
