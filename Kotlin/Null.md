@@ -53,11 +53,29 @@ fun main() {
     }
 }
 ```
+a가 null 이기 때문에 결과값은 없다.
+
+---
 
 ### ?:
 - elvis operator 
 
 객체가 ```null``` 이 아니라면 그대로 사용하지만 ```null``` 일 경우엔 <b>연산자 우측 객체로 대체된다.</b>
+
+```kotlin
+fun main() {
+    val a : String? = null
+
+    println(a?: "default".toUpperCase())
+}
+```
+### output
+```kotlin
+DEFAULT
+```
+a 가 null 이기 때문에 우측 연산자를 실행한다.
+
+---
 
 ### !!.
 - non-null assertion operator
@@ -65,5 +83,11 @@ fun main() {
 참조 연산자를 사용할 때 null 여부를 컴파일 시 확인하지 않게 하여 runtime 때 ```null pointer exeption``` 이 나도록 <b>의도적으로 방치한다.</b>
 
 ```kotlin
+fun main() {
+    val a : String? = null
+
+    println(a!!.toUpperCase())
+}
 ```
+a 가 null 임을 확인하고 exception 이 발생하여 error 가 발생하고 프로그램이 중단된다.
 

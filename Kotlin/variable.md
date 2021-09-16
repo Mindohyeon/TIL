@@ -3,7 +3,7 @@
 ## var
 
 - 읽기/쓰기가 모두 가능한 변수
-- 할당 후 변경이 가능하다.
+- 할당 후 변경이 가능하다.   
 
 ```kotlin
 var a : Int = 10 // a = 10
@@ -14,46 +14,19 @@ var b : Char = 'a' // b = 'a'
 
 - 읽기만 가능한 변수
 - 할당 후 변경이 불가능하다.
+- <b>할당된 객체를 바꿀 수 없지만, 객체 내부의 속성은 변경할 수 있다.</b>
 
 ```kotlin           
 val b : Int = 10
 b = 30  //오류 발생
 ```
+## Const
+생성 이후 값을 바꿀 수 없다.
 
-## null
-
-- 코틀린의 기본 변수는 null값을 가질 수 없다.
-- 변수에 null 값을 넣으려면 타입명 뒤에 ?를 붙이고 null값을 넣어야 한다.
+의례적으로 대문자와 언더바(_)만 사용한다.
 ```kotlin
-var temp: String = "ABCD"
-temp = null // 문법 오류
-```   
-```kotlin
-fun main() {
-    var a : String? = "test"
-    print(a.length)
+const val CONST_A = 1234
 ```
-
-- return type 에 ? 가 붙으면, return type 이 null 도 될 수 있다는 의미이다.
- ```kotlin
-var temp: String? = "ABCD"
-temp = null
-```
----
-a가 null이 가능한 String 타입일 때, 그대로 출력하면 오류가 발생한다.
-
- <b>그 이유는</b>, a가 null 일수도 있기에 안전하지 않기 때문이다.   
-
-<b>따라서</b>, null 이 아닐때만 호출 할 수 있도록 조건문을 사용해야 한다.
-
-```kotlin
-fun main() {
-    var a : String? = "test"
-    print(a.length) //오류 발생
-    if(a != null) print(a.length) // 4 출력
-```
-
-
 
 
 ## type
