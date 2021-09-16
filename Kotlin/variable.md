@@ -111,6 +111,40 @@ Test, Kotlin, String
 Test-Kotlin-String
 Kotlin
 ```
+```kotlin
+fun main() {
+    val nullString : String? = null
+    //empty = 비어있는 = null
+    val emptyString = ""
+    val blackString = " "
+    val normalString = "O"
+
+    println(nullString.isNullOrEmpty())
+    println(emptyString.isNullOrEmpty())
+    println(blackString.isNullOrEmpty())
+    println(normalString.isNullOrEmpty())
+
+    //줄바꿈
+    println()
+
+    println(nullString.isNullOrBlank())
+    println(emptyString.isNullOrBlank())
+    println(blackString.isNullOrBlank())
+    println(normalString.isNullOrBlank())
+}
+```
+### output
+```kotlin
+true
+true
+false
+false
+
+true
+true
+true
+false
+```
 
 ### Char
 
