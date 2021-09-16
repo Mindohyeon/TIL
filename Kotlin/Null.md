@@ -37,8 +37,18 @@ fun main() {
 ## if 문 대신 null check 를 하는 방법
 
 ### ?.
-- null safe operator
+- null safe operator 
+  
+참조 연산자를 실행하기 전에 객체가 ```null``` 인지 확인하고 객체가 ```null```이라면
+<b>뒤따라오는 구문을 실행하지 않는다.</b>
+
 ### ?:
-- elvis operatior
+- elvis operator 
+
+객체가 ```null``` 이 아니라면 그대로 사용하지만 ```null``` 일 경우엔 <b>연산자 우측 객체로 대체된다.</b>
+
 ### !!.
 - non-null assertion operator
+
+참조 연산자를 사용할 때 null 여부를 컴파일 시 확인하지 않게 하여 runtime 때 ```null pointer exeption``` 이 나도록 <b>의도적으로 방치한다.</b>
+
