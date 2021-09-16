@@ -35,12 +35,24 @@ fun main() {
 때문에 nullable 변수를 사용할때에는 if 문으로 null ceck를 하지 않으면 코드가 컴파일 되지 않는다.
 
 ## if 문 대신 null check 를 하는 방법
+스코프 함수와 사용하면 더욱 편리하다.
 
 ### ?.
 - null safe operator 
   
 참조 연산자를 실행하기 전에 객체가 ```null``` 인지 확인하고 객체가 ```null```이라면
 <b>뒤따라오는 구문을 실행하지 않는다.</b>
+
+```kotlin
+fun main() {
+    val a : String? = null
+
+    a?.run {
+        println(toUpperCase())
+        println(toLowerCase())
+    }
+}
+```
 
 ### ?:
 - elvis operator 
@@ -51,4 +63,7 @@ fun main() {
 - non-null assertion operator
 
 참조 연산자를 사용할 때 null 여부를 컴파일 시 확인하지 않게 하여 runtime 때 ```null pointer exeption``` 이 나도록 <b>의도적으로 방치한다.</b>
+
+```kotlin
+```
 
