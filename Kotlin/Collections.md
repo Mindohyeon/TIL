@@ -105,7 +105,7 @@ true
 > List 와 동일하게 추가, 삭제 가능한지 여부에 따라 Map 과 mutableMap 존재한다.
 > 추가, 삭제도 똑같다.
 
-```kotlin
+```kotlin 
 fun main() {
     val a = mutableMapOf("사과" to "빨간색" ,
                         "바나나" to "노란색",
@@ -121,9 +121,7 @@ fun main() {
     a.remove("포도")
     println(a)
 
-    //map 의 index 형태로 참조
     println(a["사과"])
-
 }
 ```
 
