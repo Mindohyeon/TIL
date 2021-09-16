@@ -62,7 +62,7 @@ fun main() {
 
 ## Set
 순서가 정렬되지 않고, 중복이 허용되지 않는 컬렉션이다.
-> List 와 동일하게 추가, 삭제 가능한지 여부에 따라 Set 과 MutableSet도 존재한다.
+> List 와 동일하게 추가, 삭제 가능한지 여부에 따라 Set 과 mutableSet도 존재한다.
 > 추가, 삭제도 똑같다.
 
 - ```index``` 로 위치를 지정하여 객체를 참조할 수 없다.
@@ -102,7 +102,30 @@ true
 객체를 넣을 때 그 객체를 찾을 수 있는 ```Key``` 를 쌍으로 넣어주는 컬렉션
 
 같은 Key에 다른 객체를 넣으면 기존의 객체가 대체된다. 
+> List 와 동일하게 추가, 삭제 가능한지 여부에 따라 Map 과 mutableMap 존재한다.
+> 추가, 삭제도 똑같다.
 
+```kotlin
+fun main() {
+    val a = mutableMapOf("사과" to "빨간색" ,
+                        "바나나" to "노란색",
+                        "포도" to "보라색")
+
+    for(entry in a) {
+        println("${entry.key} : ${entry.value}")
+    }
+
+    a.put("청포도", "초록색")
+    println(a)
+
+    a.remove("포도")
+    println(a)
+
+    //map 의 index 형태로 참조
+    println(a["사과"])
+
+}
+```
 
 
 ## MutableList 기능
