@@ -10,6 +10,55 @@ Java의 List,Map,Set 등을 말한다.
 #### List : Mutable
 수정 가능한 List는 mutableListOf로 선언한다. listOf와 차이점은 <b>추가 및 삭제가 가능하다. 즉, 읽기/쓰기 모두 가능하다. (add, remove 등)</b>
 
+```kotlin
+fun main() {
+    val a = listOf("사과","딸기","배")
+    //List a 의 1번째 index 값 출력
+    println(a[1])
+
+    //List a 에서 요소를 하나씩 fruit 변수에 할당
+    for(fruit in a) {
+        print("${fruit} :")
+    }
+    //줄을 바꾸기 위함
+    println()
+
+    val b = mutableListOf(6,3,1)
+    println(b)
+
+    //List 뒤에 4 추가
+    b.add(4)
+    println(b)
+
+    //index 2번째에 8 추가
+    b.add(2,8)
+    println(b)
+
+    //index 1번째 값을 삭제
+    b.removeAt(1)
+    println(b)
+
+    //무작위로 섞기
+    b.shuffle()
+    println(b)
+
+    // 오름차순으로 정렬
+    b.sort()
+    println(b)
+}
+```
+### output
+```kotlin
+딸기
+사과 : 딸기 : 배 :
+[6 , 3 , 1]
+[6 , 3 , 1 , 4]
+[6 , 3 , 8 , 1 , 4]
+[6 , 8 , 1 , 4]
+[8 , 1 , 6 , 4]
+[1 , 4 , 6 , 8]
+```
+
 ## MutableList 기능
 - init
 - add, addAll
@@ -67,4 +116,6 @@ fun main() {
 val 로 선언하든 var 로 선언하든 함수의 <b>추가, 삭제는 가능하다.</b>
 
 하지만 <b>val</b>로 선언된 MutableList 는 새로운 MutableList 를 전달받을 수 없다.
+
+
 
