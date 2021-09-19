@@ -4,6 +4,5 @@
 ### ANR 이란?
 <b>Application Not Responding</b> : 응답 없음 오류
 
----
 
 버전 오류가 뜰 때에는 버전 뒤에 + 를 써보자
