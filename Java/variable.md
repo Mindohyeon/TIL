@@ -29,6 +29,21 @@
 - char = '\u0000'
 - boolean = false
 
+타입|할당되는 메모리 크기|기본값|
+|---|--------------------|------|
+blooean|1 byte|false|
+byte|1 byte|0|
+short|2 byte|0|
+<b>int(기본)</b>|<b>4 byte</b>|<b>0</b>|
+long|8 byte|0L|
+float|4 byte|0.0F|
+<b>double(기본)</b>|<b>8 byte</b>|<b>0.0</b>|
+char|2 byte|'\u0000'|
+
+
+
+
+
 위를 제외하고는 모두 참조 자료형이라고 봐도 무방하다.
 
 ### 참조 자료형 (Reference Type)
