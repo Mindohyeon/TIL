@@ -50,4 +50,18 @@
 
 선언시에 만든 객체를 이름으로 참조하여 그대로 사용한다.
 
+---
+## Any Class
+kotlin 에서 모든 ```Type``` 이 상속받는 최상위 타입이다.
 
+Java 로 디컴파일 해보면 Object 타입으로 변환된다.
+
+### 내부 메서드
+- equals()
+- hashCode()
+- toString()
+
+generic Type 으로 Any 를 사용하면 어떤 객체를 집어넣든 ```Up-Casting``` 이 적용돼서 모든 Type 이 들어갈 수 있다.
+
+<b>Up-Casting</b>       
+상위 자료형인 슈퍼클래스(상속을 해준 부모)로 변환하는 것
