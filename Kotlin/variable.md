@@ -1,4 +1,11 @@
 # 변수
+- ==   
+
+동일한 값인가?
+
+- ===
+
+동일한 객체인가?
 
 ## var
 
@@ -25,6 +32,7 @@ var b : Char = 'a' // b = 'a'
 ```kotlin
 lateinit var text : String
 ```
+
 ### lazy
 
 ```kotlin
