@@ -1,5 +1,5 @@
 # OOP 란? (Object - Oriented Programming)
-<b>OOP</b> 란 객체 지향적인 프로그램이다.
+<b>OOP</b> 란 <b>객체 지향적인 프로그램</b>이다.
 
 OOP 는 객체를 기준으로 코드를 나누어 구현한다. <b>Java</b> 의 경우 그 구성 부분의 단위가 <b>Class</b> 이다.
 
