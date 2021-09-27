@@ -158,9 +158,7 @@ DC6CBC 가 정해둔 색
  ## string.xml
  string.xml 에서 resources태그 사이에 원하는 title name을 입력 할 수 있다.
  ```xml
- <resources>
         <string name="app_name">title name</string>
- </resources>
  ```
  ---
 
