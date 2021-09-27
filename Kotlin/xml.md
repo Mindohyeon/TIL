@@ -128,6 +128,11 @@ color의 색을 만들 수 있다.
  ### background 의 투명도 설정
  xml 을 짤 때 background 색을 조정하고 싶다면 background 색을 colors.xml 에서 만들어 둔 색으로 해두고 앞에 다음 중 골라서 쓰자.
 
+DC6CBC 가 정해둔 색
+ ```xml
+     android:background="#80DC6CBC"
+```
+
 >  100% : FF     
 >  95% : F2  
 >  90% : E6   
