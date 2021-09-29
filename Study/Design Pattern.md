@@ -56,3 +56,19 @@
 ---
 
 ## Behavioral Pattern (행동 패턴)
+알고리즘과 객체 간 책임 할당과 관련이 있는 패턴   
+런타임에서 처리하기 어려운 복잡한 control flow(제어 흐름) 특징을 갖는다.   
+- 행동 패턴을 사용하면 개발자가 control flow 보다는 객체가 연결되는 방식에 집중할 수 있도록 해준다.
+  
+### 종류
+- Observer
+- State
+- Strategy
+- Template Method
+- Command
+
+### Observer
+한 객체의 상태 변화에 따라 다른 객체의 상태도 연동되도록 일대다(1 : N) 객체 의존 관계를 구성하는 패턴이다.
+
+### State
+객체의 생성에 따라 객체의 행위 내용을 변경해주는 패턴이다.
