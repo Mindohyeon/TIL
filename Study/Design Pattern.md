@@ -8,11 +8,11 @@
 - 공통의 언어를 만들어주고 팀원 사이의 의사 소통을 원할하게 해주는 중요한 역할을 한다.
 
 ## GOF Pattern
-- Creational Pattern
+- Creational Pattern 
 - Structural Pattern
 - Behavioral Pattern
 
-## Creational Pattern
+## Creational Pattern (생성 패턴)
 - 객체 생성에 관련된 패턴
 - 객체의 생성과 조합을 캡슐화해 특정 객체가 생성되거나 변경되어도 프로그램 구조에 영향을 크게 받지 않도록 유연성 제공
 
@@ -21,13 +21,13 @@
 - Factory Method
 - Singleton
 
-## Acstract Factory
-클래스에 의존하지 않고 서로 연관되거나 의존적인 객체들의 조합을 만드는 인터페이스를 제공하는 패턴
+### Acstract Factory (추상 팩토리)
+클래스에 의존하지 않고 서로 연관되거나 의존적인 객체들의 조합을 만드는 인터페이스를 제공하는 패턴이다.
 
-### Factory Method
-객체 생성 처리를 서브 클래스로 분리해 처리하기 쉽도록 캡슐화하는 패턴
+### Factory Method (팩토리 메서드)
+객체 생성 처리를 서브 클래스로 분리해 처리하기 쉽도록 캡슐화하는 패턴이다.
 
-###  Singleton
+###  Singleton (싱글턴)
 인스턴스 가 1개만 생성 되어야 하는 경우에 사용되는 패턴이다.   
 생성된 객체를 어디서든 참초할 수 있다.
 
@@ -37,14 +37,20 @@
 
 ---
 
-## Structural Pattern
+## Structural Pattern (구조 패턴)
 클래스나 객체를 조합해 더 큰 구조를 만드는 패턴이다.
 
 - 서로 독립적으로 개발한 클래스 라이브러리를 하나인 것 처럼 사용할 수 있다.
 - 여러 인터페이스를 합성하여 서로 다른 인터페이스들의 통일된 추상을 제공한다.
 
-
-
 ### 종류
 - Composite 
 - Decorator
+
+### Composite 
+여러 개의 개체들로 구성된 복합 객체와 단일 객체를 <b>클라이언트에서 구별 없이 다루게 해주는 패턴이다.</b>
+
+### Decorator
+객체들의 결합을 통해 <b>기능을 동적으로 유연하게 확장</b>할 수 있도록 해주는 패턴이다.
+
+---
