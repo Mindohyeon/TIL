@@ -22,3 +22,9 @@
 - API 공급업체에서는 사용자 구분을 위해 Hash 함수의 출력값인 Key Hash를 사용한다.
 
 암호화 된 Key 값이라는 개념으로 보안인증에 사용되곤 한다.
+
+## Key Hash 획득하기
+
+#### 기본 개념
+Android Application 은 Java 기반이라 Android 개발 머신에는 JDK 가 설치되어 있다.   
+또한, jdk/bin 폴더에 있는 다양한 어플리케이션 중 해시키를 생성할 수 있는 <b>keytool</b> 이라는 프로그램이 들어있다.
