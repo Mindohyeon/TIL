@@ -1,7 +1,7 @@
 # android
 안드로이드에서는 메인 ```thread``` 에서 ```runBlocking``` 을 걸어주면 일정 시간 응답이 없는 경우 ```ANR``` 이 발생하며 앱이 강제 종료된다.
 
-### ANR 이란?
+## ANR 이란?
 <b>Application Not Responding</b> : 응답 없음 오류
 
 
@@ -9,6 +9,19 @@
 
 ---
 
+## NPE 란?
+<b>NullPointerException</b> : null 때문에 발생하는 Runtime Exception
+
+### 가장 큰 문제
+- null 자체의 의미가 모호해 다양한 파생 에러 발생한다.
+- 에러 발생 이후 디버깅이 어렵다.
+
+### 예방법
+- null Parameter 를 넘기지 말자
+- null 여부 비교 처리 추가
+- 문자열을 비교시 equals 문자열을 먼저 위치 하자. (또는 Constants 사용)
+
+---
 
 ### Hash Key 란?
 특정 데이터를 해시 함수에 입력한 결과로 받은 리턴값을 의미한다.
