@@ -7,6 +7,10 @@ new 연산자와 함께사용되어 클래스로부터 객체를 생성할 때 �
 - 생성자는 오버로딩이 가능하기 때문에 하나의 클래스에 여러 개의 생성자가 있을 수 있다. 
 - 생성자도 메서드이기 때문에 리턴값이 없다는 의미로 void 를 적어야 하지만, 모든 생성자가 리턴값이 없으므로 void 를 생략하도록 한다.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 77bc9527c0ad8663bd482b59ed73a7e20c47c776
 ```java
 public class Ex08 {
 	public static void main(String[] args) {
@@ -28,7 +32,6 @@ class Food {
 	
 	String name;
 	int price;
-
     //생성자 생성
 	Food(String name, int price) {
 		this.name = name;
@@ -39,8 +42,11 @@ class Food {
 		System.out.printf("name : %s, price : %d\n",name,price);
 	}
 }
+
 ```
 
 ### 기본 생성자
 모든 클래스는 생성자가 반드시 존재한다.   
 만약 클래스에 정의된 생성자가 없으면 컴파일러가 자동적으로 생성자를 생성시킨다.
+
+
