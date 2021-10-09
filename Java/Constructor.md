@@ -28,7 +28,6 @@ class Food {
 	
 	String name;
 	int price;
-
     //생성자 생성
 	Food(String name, int price) {
 		this.name = name;
@@ -39,8 +38,11 @@ class Food {
 		System.out.printf("name : %s, price : %d\n",name,price);
 	}
 }
+
 ```
 
 ### 기본 생성자
 모든 클래스는 생성자가 반드시 존재한다.   
 만약 클래스에 정의된 생성자가 없으면 컴파일러가 자동적으로 생성자를 생성시킨다.
+
+
