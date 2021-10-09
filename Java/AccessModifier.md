@@ -7,7 +7,7 @@
 ## 접근 범위
 |  |해당 클래스 안에서|같은 패키지에서|상속 받은 클래스에서|import한 클래스에서|
 |--|---------------|---------------|--------------------|--------------------|
-|public| <center>O|<center>O|<center>O|<center>O|
+|public|<center>O|<center>O|<center>O|<center>O|
 |protected|<center>O|<center>O|<center>O|<center>O|
 |(package private)|<center>O|<center>O|<center>X|<center>X|
 |private|<center>O|<center>X|<center>X|<center>X|
