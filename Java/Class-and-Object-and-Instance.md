@@ -23,6 +23,25 @@
   - 인스턴스라는 용어는 반드시 클래스와 객체 사이의 관계로 한정지어서 사용할 필요는 없다.
   - 인스턴스는 어떤 추상적인 개념으로부터 '생성된 복제본' 을 의미한다.
 
+```java
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person();
+         
+        //둘 다 같은 의미
+
+        //인스턴스화
+        Person name;    //객체
+        name = new Person();  //name은 Person 클래스의 '인스턴스' (객체를 메모리에 할당) 
+
+    }
+}
+class Person {
+}
+```
+
+
+
 
 ## Object VS Instance
 <b>Class 의 타입</b>으로 선언되었을 때 <b>객체</b>라고 부르고, 그 객체가 메모리에 할당되어 실제 사용될 때 <b>인스턴스</b> 라고 부른다.
