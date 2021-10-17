@@ -39,7 +39,7 @@ public class Main {
 class Person {
 }
 ```
-대입연산자 ```=``` 우측에 있는 new Person();을 통해 Person 클래스를 바탕으로 인스턴스를 만든다.
+대입연산자 ```=``` 우측에 있는 ```new Person();```을 통해 Person 클래스를 바탕으로 인스턴스를 만든다.
 
 ## Object VS Instance
 <b>Class 의 타입</b>으로 선언되었을 때 <b>객체</b>라고 부르고, 그 객체가 메모리에 할당되어 실제 사용될 때 <b>인스턴스</b> 라고 부른다.
