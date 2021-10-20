@@ -1,7 +1,7 @@
 # Compiler VS Interpreter
 
 ## Compiler
-1. 프로그램 runtime(실행시간) <b>전에</b> 전체 코드를 검사하여 machine code 로 변환한다.
+1. 프로그램 runtime(실행시간) <b>전에</b> 전체 코드를 검사하여 lower level language(ex: 어셈블리어 언어, machinecode) 로 변환한다.
 
 2. 소스 코드를 <b>분석</b>하는데 <b>많은 시간</b>이 필요하다.
 그러나, <b>전체 실행 시간은 Interpreter 보다 비교적 빠르다.</b>
