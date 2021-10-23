@@ -1,4 +1,4 @@
-# 각종 error
+# Exception(예외)
 
 ## NPE 란?
 <b>NullPointerException</b> : null 때문에 발생하는 Runtime Exception
