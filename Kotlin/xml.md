@@ -75,7 +75,7 @@ ImageView의 테두리로부터 Image의 사이에 여백을 가진다.
 
 > width = 폭,가로  
 > height = 높이  
-> weight = 두께,무게  
+> weight = 두께,무게  (xml을 n : n 비율로 만들고 싶을 때 쓰임)
 
 ## AndroidManifest.xml  
 manifest = 나타내다, 드러내다  
