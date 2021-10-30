@@ -36,3 +36,8 @@ RuntimeException 하위 예외
 - null Parameter 를 넘기지 말자
 - null 여부 비교 처리 추가
 - 문자열을 비교시 equals 문자열을 먼저 위치 하자. (또는 Constants 사용)
+
+---
+
+## IllegalArgumentException
+적합하지 않거나(illegal) 적절하지 못한(inappropriate) 인자를 메서드에 넘겨줬을 때 발생한다.
