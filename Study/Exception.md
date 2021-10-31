@@ -41,3 +41,5 @@ RuntimeException 하위 예외
 
 ## IllegalArgumentException
 적합하지 않거나(illegal) 적절하지 못한(inappropriate) 인자를 메서드에 넘겨줬을 때 발생한다.
+
+ 
