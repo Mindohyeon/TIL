@@ -40,3 +40,9 @@
 Android Application 은 Java 기반이라 Android 개발 머신에는 JDK 가 설치되어 있다.   
 또한, jdk/bin 폴더에 있는 다양한 어플리케이션 중 해시키를 생성할 수 있는 <b>keytool</b> 이라는 프로그램이 들어있다.
 
+---
+
+### android stuido 에서 Java로 코드를 작성할 때 getter 와 setter 단축키
+
+- <b>```Alt``` + ```Insert```</b>
+
