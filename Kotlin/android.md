@@ -46,3 +46,13 @@ Android Application 은 Java 기반이라 Android 개발 머신에는 JDK 가 �
 
 - <b>```Alt``` + ```Insert```</b>
 
+
+---
+
+
+## Error running 'MainActivity': The activity must be exported or contain an intent-filter ?
+
+
+
+run 버튼 옆에 app이 아닌 서브 액티비티명으로 되어있는지 확인해보자.
+
