@@ -55,3 +55,7 @@ Android Application 은 Java 기반이라 Android 개발 머신에는 JDK 가 �
 
 run 버튼 옆에 app이 아닌 서브 액티비티명으로 되어있는지 확인해보자.
 
+## Unreachable statement
+도달할 수 없는 명령문이다
+
+return 문이나 무한 루프를 다시 보자
