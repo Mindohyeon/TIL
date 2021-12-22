@@ -26,6 +26,6 @@ class UserInfo {
     private init() {}
 }
 ```
-혹시라도 ```init``` 메서드를 호출해 <b>```instance``` 를 또 생성하는 것을 막기 위해,    
+혹시라도 ```init()``` 메서드를 호출해 <b>```instance``` 를 또 생성하는 것을 막기 위해,    
 init() 메서드의 접근 제어자를 ```private``` 로 지정</b>해주면 된다.
 
