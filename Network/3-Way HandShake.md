@@ -8,6 +8,11 @@ TCP는 장치들 사이에 논리적인 접속을 성립하기 위하여 Three-W
 
 <img src="Image/../../Image/225A964D52F1BB6917.png">    
 
+SYN : synchronized 
+ACK :
+
+## 설명 
+
 A -> B : 살아있어?   
 B -> A : 응, 너는?   
 A -> B : 나도! 
