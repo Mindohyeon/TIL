@@ -16,7 +16,7 @@ Property 는 크게 5가지가 존재한다.
 
 > 클래스의 저장 프로퍼티는 옵셔널이 아니라면 프로퍼티 기본값을 지정해주거나 사용자정의 이니셜라이즈를 통해 반드시 초기화해야한다. 그렇지 않으면 프로퍼티 초기값을 할당할 수 없기 때문에 인스턴스 생성이 불가능 하다.
 ```Swift
-struct stored {
+struct Stored {
     var x : Int  //저장 프로퍼티
     var y : Int  //저장 프로퍼티
 }
@@ -24,7 +24,7 @@ struct stored {
 //구조체는 기본적으로 저장 프로퍼티를 매개변수로 가지는 이니셜라이즈가 있다.
 let point : stored = stored(x : 10, y : 10)
 
-class position {
+class Position {
     var pointer : stored //저장 프로퍼티(변수)
     let name : String //저장 프로퍼티(상수)
 }
@@ -40,4 +40,24 @@ class position {
 인스턴스를 초기화하면서 저장 프로퍼티로 쓰이는 인스턴스들이 한 번에 생성되거나 모든 저장 프로퍼티를 생성할 필요가 없다면 그때 지연 저장 프로퍼티를 사용하면 된다.
 
 #### 효과
-지연 저장 프로퍼티를 잘 사용하면 불필요한 성능 저하나 공간 낭비를 줄일 수 있다.
+지연 저장 프로퍼티를 잘 사용하면 불필요한 성능 저하나 공간 낭비를 줄일 수 있다.     
+```swift
+
+struct Stored {
+    var x : Int = 0
+    var y : Int = 0
+}
+
+class Position {
+    lazy var point : stored = stored()
+    let name : String
+
+    init(name : String) {
+        self.name = name
+    }
+}
+// position 이라는 객체는 생성됐지만 아직 Stored는 객체에 생성되지 않았다.
+let position : Position = Position(name : "도현")
+
+// 이 코드를 통해 point 프로프티로 처음 접근할 때 point 프로퍼티의 Stored 가 생성된다.
+print(position.point)
