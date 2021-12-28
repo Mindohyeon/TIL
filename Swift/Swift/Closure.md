@@ -38,3 +38,12 @@ func backward(_ s1 : String, _ s2 : String) -> Bool {
 var reversedNames = names.sorted(by: backward)
 // reversedNames = ["D","C","B","A"]
 ```
+
+위 코드에 있는 backward 함수를 클로저 표현식 구문으로 바꾼다면
+
+```swift
+reversedNames = names.sorted(by: { (s1 : String, s2 : String) -> Bool in
+    return s1 > s2})
+```
+
+따로 작성했던 backward 함수를 매개변수를 넣는 () 안에 넣었다.
