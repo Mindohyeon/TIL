@@ -87,10 +87,10 @@ print(position.point)
 
 프로퍼티 감시자에는 <b>프로퍼티의 값이 변경되기 직전에 호출되는</b> ```willSet 메서드```와 <b>프로퍼티의 값이 변경된 직후에 호출되는</b> ```didSet 메서드```가 있다.
 
-#### willSet
+### willSet
 willSet 메서드에서 전달되는 전달인자는 프로퍼티가 <b>변경될 값</b>이다.
 
-#### didSet
+### didSet
 didSet 메서드에서 전달되는 프로퍼티의 값은 <b>변경되기 전의 값</b>이다.
 
 
