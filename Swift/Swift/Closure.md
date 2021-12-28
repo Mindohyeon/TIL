@@ -42,8 +42,38 @@ var reversedNames = names.sorted(by: backward)
 위 코드에 있는 backward 함수를 클로저 표현식 구문으로 바꾼다면
 
 ```swift
-reversedNames = names.sorted(by: { (s1 : String, s2 : String) -> Bool in
+reversedNames = names.sorted(by : { (s1 : String, s2 : String) -> Bool in
     return s1 > s2})
 ```
 
-따로 작성했던 backward 함수를 매개변수를 넣는 () 안에 넣었다.
+따로 작성했던 backward 함수를 매개변수를 넣는 () 안에 넣었다.   
+위 코드처럼 짧은 코드라면 한 줄로 쓸 수 있다.
+
+```swift
+reversedNames = names.sorted(by : { (s1 : String, s2 : String) -> Bool in return s1 > s2})
+```
+
+sorted(by:) 메서드는 매개변수로 함수 타입을 받기 때문에 결과적으로 반환 타입을 유추할 수 있다.   
+
+즉, String Array 를 정렬할 것이기 때문에 (String, String) -> Bool 이라는 함수 타입을 받을 것이란 것을 유추할 수 있기 때문에, 굳이 써주지 않아도 된다.
+
+```swift
+reversedNames = names.sorted(by : { (s1,s2 in return s1 > s2)})
+```
+
+코드는 더 짧아졌지만, 이렇게 하면 코드를 이해할 때 어려울 수 있기 떄문에 아까처럼 타입을 명시하는 방법이 더 좋을 수도 있다.
+
+s1 > s2 의 결과가 Bool 이기 때문에 Bool 값을 반환한다고 유추할 수 있기 때문에 return 도 생략할 수 있다.
+
+```swift
+reversedNames = names.sorted(by : { (s1,s2 in s1 > s2)})
+```
+
+#### Shortand Argument Names
+Swift 는 인라인 클로저에서 인수 이름을 간단하게 사용하는 방법을 제공한다.
+순서에 따라 $0,$1 와 같이 사용된다. swift 가 이를 어떤 인수인지 유추하여 잘 수행한다. 여기서 in 키워드마저 생략해버리면
+
+```swift 
+reversedNames = names.sorted(by : { $0 > $1})
+```
+
