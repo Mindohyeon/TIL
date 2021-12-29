@@ -6,6 +6,8 @@ TCP는 장치들 사이에 논리적인 접속을 성립하기 위하여 Three-W
 - 실제로 데이터 전달이 시작하기 전에 한쪽이 다른 한쪽이 준비되었다는 것을 알 수 있도록 한다.
 - 양쪽 모두 상대편에 대한 초기 순차일련번호를 얻을 수 있도록 한다.
 
+#### UDP 의 단점을 극복했다
+
 <img src="Image/../../Image/225A964D52F1BB6917.png">    
 
 SYN : synchronize sequence numbers   
@@ -17,3 +19,4 @@ A -> B : 살아있어?
 B -> A : 응, 너는?   
 A -> B : 나도! 
 
+# TCP vs UDP
