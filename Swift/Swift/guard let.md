@@ -1,5 +1,6 @@
 # guard let ?
 ```guard``` 뒤에 따라붙는 코드의 실행 결과가 true 일 때 코드가 계속 실행된다.
+- guard let 과 if let 둘 다 Optional 일때만 사용 가능하다.
 - if 구문과는 다르게 ```guard``` 구문은항상 ```else``` 구문이 뒤에 따라와야 한다.
 
 만약 ```guard``` 뒤에 따라오는 ```Bool``` 값이 false 라면 else 의 블록 내부 코드를 실행한다.   
@@ -12,6 +13,17 @@ Bool 타입의 값으로 guard 구문을 동작시킬 수 있지만 <b>옵셔널
 ## 장점
 guard 구문 사용시 if 코드를 훨씬 간결하고 읽기 좋게 구성 가능하다.
 예외사항만을 처리하고 싶다면 guard 구문을 사용하는 것이 훨씬 간편하다.
+
+아래의 코드처럼
+```swift
+func ullName(name : String, rawPrefix : String?) {
+    guard let prefix = rawPrefix else {
+        return 
+    }
+    print(prefix)
+}
+```
+
 
 ## if let 
 if let 으로 옵셔널 바인딩 된 상수는 그 블럭 안에서만 변수가 사용 가능하다.
