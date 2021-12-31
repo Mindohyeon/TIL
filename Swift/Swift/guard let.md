@@ -31,3 +31,8 @@ if let 으로 옵셔널 바인딩 된 상수는 그 블럭 안에서만 변수�
 #### 옵셔널 바인딩이란?
 아래 링크를 보자
 - [Optional Binding](https://github.com/Mindohyeon/TIL/blob/main/Swift/Swift/Optional%20Binding.md)
+
+
+## 정리
+- guard let 은 구문 실행 코드 아래부터 함수 내부의 지역 상수처럼 사용 가능하다.
+- if let 은 그 블럭 안에서만 변수가 사용 가능하다.
