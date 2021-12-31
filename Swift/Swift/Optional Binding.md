@@ -64,3 +64,7 @@ nil
 ```
 
 nil 이 지정된 변수를 Unwrapping 하려고 하면 <b>오류가 아니라 에러가 난다.</b>
+
+#### 아래를 참고하자.   
+
+[오류와 에러의 차이란 뭘까?](https://github.com/Mindohyeon/TIL/blob/main/Study/Simple/Error.md)
