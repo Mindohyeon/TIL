@@ -38,3 +38,5 @@ doubleNumbe = number.map( { (num : Int) -> Int in
 ```
 
 map 메서드를 통해 값을 하나씩 받아와 클로저를 통해 값을 반환해준다.
+
+## Filter
