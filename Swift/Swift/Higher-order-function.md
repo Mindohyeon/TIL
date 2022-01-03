@@ -3,6 +3,10 @@
 
 Swift 의 함수는 일급시민이기 때문에 함수의 전달인자로 전달할 수 있으며, 함수의 결과값으로 반환할 수 있다.
 
+- Map
+- Filter
+- Reduce
+
 ## Map
 제공된 클로저를 각 항목에 적용한 후, 원래의 순서와 같도록 배치한 뒤 반환하는 메소드이다. 기존의 데이터를 변형하여 새로운 컨테이너를 생성하는 것이다.   
 
@@ -40,3 +44,8 @@ doubleNumbe = number.map( { (num : Int) -> Int in
 map 메서드를 통해 값을 하나씩 받아와 클로저를 통해 값을 반환해준다.
 
 ## Filter
+반환타입이 Bool 인 매개변수 함수의 결과가 true 면 새로운 컨테이너에 값을 담아 반환한다.
+```swift
+let arr = [0,1,2,3,4]
+let filterArray = arr.filter {$0 % 2 == 0}
+print(filterArray) // [0,2,4]
