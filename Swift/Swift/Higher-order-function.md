@@ -56,6 +56,7 @@ print(filterArray) // [0,2,4]
 데이터를 합쳐주기 위해 사용한다.
 기존 컨테이너에서 내부의 값들을 결합하여 새로운 값을 만든다.   
 () 안에 초기값을 설정한다.
+
 ```swift
 let arr = [0,1,2,3,4]
 let reduceArray = arr.reduce(0) {$0 + $1}
