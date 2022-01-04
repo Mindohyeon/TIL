@@ -34,7 +34,6 @@ guard let str = str else {
     //str error
     fatalError()
 }
-str 
 ```
 
 ## Wrapping VS Unwrapping
