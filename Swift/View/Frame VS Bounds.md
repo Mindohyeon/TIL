@@ -1,4 +1,5 @@
 # Frame VS Bounds
+Frame 과 Bounds 는 UIView 의 instance property 이다.
 
 ## Frame 이란?
 <b>SuperView(상위 뷰) </b>안에서 View 의 위치와 크기를 나타낸다.   
