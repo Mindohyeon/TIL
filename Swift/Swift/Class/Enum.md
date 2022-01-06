@@ -13,6 +13,14 @@ enum : Name : Int {
 }
 ```
 
+아래처럼 한 줄로 나열할 수도 있다.
+
+```swift
+enum : Name : Int {
+    case name1 , name2 , name3
+}
+```
+
 ## Raw Values
 열거형의 case 는 모두 독립적인 값이지만 내부에 또 다른 값을 저장할 수 있는데 이것을 <b>원시값(Raw Values)</b> 이라고 한다.
 
@@ -90,9 +98,9 @@ enum Weekday : String {
     case thursday
     case friday
     case saturday
-
-    Weekday.sunday.rawValue // "sunday"
 }
+
+Weekday.sunday.rawValue // "sunday"
 ```
 
 원시값의 자료형을 String 으로 하고 원시값 할당을 생략하면 case 이름과 동일한 문자열의 원시값이 저장된다. 직접 할당할 수도 있다. 
