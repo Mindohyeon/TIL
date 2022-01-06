@@ -29,3 +29,5 @@ class UserInfo {
 혹시라도 ```init()``` 메서드를 호출해 <b>```instance``` 를 또 생성하는 것을 막기 위해,    
 init() 메서드의 접근 제어자를 ```private``` 로 지정</b>해주면 된다.
 
+아래를 참고하자   
+[Singleton](https://github.com/Mindohyeon/TIL/blob/main/Study/Design%20Pattern.md)
