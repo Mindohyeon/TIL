@@ -133,3 +133,36 @@ enum ch : Character {
 - 모든 케이스가 동일한 형식을 사용한다.
 - case 당 하나의 값만 저장할 수 있다.
 - 원시값 문자열에 숫자가 포함되어 있을 경우에 숫자만 사용하려면 따로 추출해야하는 번거로움이 있다.
+
+---
+
+## 옵셔널은 Enum 으로 구현되어 있다.
+
+```swift
+public enum Optianal<Wrapped> {
+  case none
+  case some(Wrapped)
+}
+```
+
+이것이 옵셔널이 '값' 과 '없는 값' 을 가지고 있는 이유이다.
+
+또한 옵셔널은 Enum 이기 때문에 아래와 같이 구현할 수 있다.
+
+```swift
+let age : Int? = 22
+
+switch age {
+  case .none :
+    print("나이 정보가 없습니다.")
+
+  case .some(let x) where x < 20 : 
+    print("청소년")
+
+  case .som(let x) where x >= 20 : 
+    print("성인")
+
+  default : 
+  print("사람")
+}
+```
