@@ -138,6 +138,7 @@ enum ch : Character {
 
 ## 옵셔널은 Enum 으로 구현되어 있다.
 
+Enum 은 실제로 이렇게 생겼다.
 ```swift
 public enum Optianal<Wrapped> {
   case none
