@@ -15,7 +15,6 @@ MVC 패턴이나 delegate 패턴으로 분리하더라도, 한 파일에서 코�
 3. 한 칸을 띄고 표시하고 싶은 구역을 적는다.
 
 ```swift
-
 //MARK: - Protocol1
 protocol Protocol1 {
     func func1()
@@ -41,3 +40,5 @@ extension Protocol1 {
 
 
 이렇게 설정해주면 m 만 적어도 자동완성 된다.
+
+뿐만 아니라 우측 상단에 있는 + 버튼을 눌러도 같은 화면이 나온다.
