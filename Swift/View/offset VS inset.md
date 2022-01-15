@@ -39,3 +39,10 @@ box.snp.makeConstraints {
     $0.edges.equalToSuperview().inset(50)
 }
 ```
+
+## 정리
+#### offset
+Element 와의 간격에 사용한다.
+
+#### inset
+Superview 와의 간격에 사용한다.
