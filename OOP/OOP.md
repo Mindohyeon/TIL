@@ -52,13 +52,10 @@ OOP 는 객체를 기준으로 코드를 나누어 구현한다. <b>Java</b> 의
 
 코드 재사용과 코드 길이가 감소되어 유지보수가 용이하도록 도와준다.
  
-
- ### Overriding & Overloading
-
- - Overriding   
- 부모 클래스에서 상속받은 자식 클래스에서 부모 클래스에서 만들어진 메서드를 자식 클래스에서 자신이 원하는대로 <b>재정의</b>해서 사용하는 것
-
- - Overloading   
-같은 이름의 메서드를 사용하지만 메서드마다 다른 용도로 사용되고 결과도 다르게 구현할 수 있게 만드는 것
-
-    메서드끼리 이름은 같지만 매개변수의 갯수나 타입이 달라야 Overloading 적용
+## OOP 의 장점?
+- Encapsulation (캡슐화)
+- Access Control (접근제어)
+- Abstraction (추상화)
+- NameSpace
+- Expressive Syntax
+- Extensibility
