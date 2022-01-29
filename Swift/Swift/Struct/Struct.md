@@ -80,4 +80,7 @@ Min.my_name()
 - 상속이 필요하지 않고 모델의 사이즈가 그닥 크지 않다면 <b>struct</b> 사용
 - JSON 필드와 1 : 1 mapping 되는 간단한 모델이 필요하다면 <b>struct</b> 사용
 - 해당 모델을 serialize 해서 전송하거나 파일로 저장할 일이 있다면 <b>class</b> 사용
-- 해당 모델이 Obj-C 에서도 사용되어야 한다면 <b>class</b> 사용
+- 해당 모델이 Obj-C 에서도 사용되어야 한다면 <b>class</b> 사용  
+
+*Serialize(직렬화) 란?
+[Serialize](https://github.com/Mindohyeon/TIL/blob/main/Study/Serialize.md)
