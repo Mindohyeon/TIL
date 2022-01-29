@@ -84,3 +84,6 @@ Min.my_name()
 
 *Serialize(직렬화) 란?
 [Serialize](https://github.com/Mindohyeon/TIL/blob/main/Study/Serialize.md)
+
+*mapping(매핑) 이란?
+하나의 값을 다른 값으로 대응시키는 것
