@@ -74,3 +74,10 @@ Min.my_name()
 - 상속이 불가능하다. (Protocol 은 가능)
 - ```Codable``` 프로토콜을 사용하여 JSON <-> Struct 변환 가능 (Swfit 4 이상만 가능)
 - 항상 새로운 변수로 copy 가 일어나기 때문에 multi-thread 환경에서 공유변수로 인해 문제를 일으킬 확률이 적다.
+
+
+## 어떤 상황에 써야할까?
+- 상속이 필요하지 않고 모델의 사이즈가 그닥 크지 않다면 <b>struct</b> 사용
+- JSON 필드와 1 : 1 mapping 되는 간단한 모델이 필요하다면 <b>struct</b> 사용
+- 해당 모델을 serialize 해서 전송하거나 파일로 저장할 일이 있다면 <b>class</b> 사용
+- 해당 모델이 Obj-C 에서도 사용되어야 한다면 <b>class</b> 사용
