@@ -1,5 +1,19 @@
 # Swift 의 Error 모음
 
-## Fatal error: Expected superview but found nil when attempting make constraint `equalToSuperview`.
+#### Fatal error: Expected superview but found nil when attempting make constraint `equalToSuperview`.
 
 - 추가하려는 객체를 addSubView 했는지 확인해보자.
+
+## 레이아웃이 깨지는 이슈 파악하는 방법
+
+#### Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger. 
+
+- Breakpoint 를 만든다.
+    1. show the Breakpoint navigator 를 클릭한다.
+    2. '+' 버튼을 누르고 Symbolic Breakpoint... 를 클릭한다.
+    3. Symbol 부분에 UIViewAlertForUnsatisfiableConstraints 를 입력한다.
+    4. 앱 실행 후 제약조건이 깨지는 부분으로 가서 디버깅한다.<br><br>
+
+
+    이렇게 하면 Breakpoint가 깨지는 부분에서 멈춘다
+    그럼 콜스택을 보고 확인해보면 쉽게 확인할 수 있다.
