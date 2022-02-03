@@ -11,3 +11,6 @@ URLSessionDataTask 는 다운로드한 데이터를 JSONData 타입의 object �
 
 ### URLSessionDownloadTask
 URLSessionDownloadTask 는 서버에서 응답으로 준 데이터를 파일에 저장해주는 task 를 의미한다.
+
+### URLSessionUploadTask
+URLSessionUploadTask 는 ```URLSessionDataTask``` 를 <b>상속</b>하고 있고, 데이터를 request body 에 넣어서 서버에 업로드하는 task 를 의미한다.
