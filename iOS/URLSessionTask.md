@@ -7,3 +7,4 @@ URLSessionTask 는 특정 리소스 다운로드 같이 URLSession 에서 수행
 - URLSessionUploadTask
 
 ### URLSessionDataTask
+URLSessionDataTask 는 다운로드한 데이터를 JSONData 타입의 object 로 넘겨주는 task 를 의미한다.
