@@ -8,6 +8,8 @@ iOS 에서 SearchBar 를 구현하는 방법은 2가지가 있다.
 
 UISearchBar 와 함께 사용자와 상호작용할 때 UISearchController 는 검색 결과 컨트롤러를 통해 검색 결과를 표시한다.
 
+UISearchController 안에 SearchBar 가 포함되어 있다.
+
 #### init(searchResultsController: UIViewController?)
 UISearchController 클래스의 initialize 이다.
 
