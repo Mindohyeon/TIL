@@ -35,5 +35,6 @@ weak는 객체를 추적하면서 객체가 사라지게 되면 nil 로 바꿔�
 - <b>weak</b>: 대표적으로 retain cycle에 의해 메모리가 누수되는 문제를 막기 위해 사용되며, delegate 패턴이 있다.
 - <b>unowned</b> : 객체의 라이프사이클이 명확하고 개발자에 의해 제어 가능이 명확한 경우, weak Optional 타입 대신 사용하여 좀 더 간결한 코딩이 가능하다.
 
+*ARC(Automatic Reference Counting)? : [ARC란?]("https://github.com/Mindohyeon/TIL/blob/main/Swift/ARC/ARC.md")
 
 <b>*라이프 사이클(LifeCycle)?</b> : 객체의 생존 기간. 객체가 생성된 후부터 폐기될 때까지의 기간을 뜻한다.
