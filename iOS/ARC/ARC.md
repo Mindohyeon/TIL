@@ -24,4 +24,4 @@ ARC 의 원리는 <b>자동으로 MRC가 했던 레퍼런스 카운트팅 작업
 이 메모리 릭 현상을 자동으로 막아주는 것이 바로 <b>ARC</b> 인 것이다.
 
 ## 그럼 메모리 관리하는 법을 몰라도 될까?
-ARC 는 레퍼런스가 참조당할때 +1 그 인스턴스가 쓸모없어졌을 때만 판단해서 -1 을 해주기 때문에 문제가 발생한다. 이에 대한 예시로는 Retain Cycle 이 있다.
+ARC 는 레퍼런스가 참조당할때 +1 그 인스턴스가 쓸모없어졌을 때만 판단해서 -1 을 해주기 때문에 문제가 발생한다. 이에 대한 예시로는 [Retain Cycle]("https://github.com/Mindohyeon/TIL/blob/main/iOS/RetainCycle/RetainCycle.md") 이 있다.
