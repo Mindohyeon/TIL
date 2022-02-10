@@ -18,8 +18,49 @@ A를 클래스라고 가정하고 "let instance = A()" 라고 만들어 주는 �
 
 <img src="../../Image/RetainCycle-Instance.png">
 
+이렇게 만들어진 인스턴스는 default 로 강한(strong) 참조로 연결되어 있다.
+
+만약 인스턴스 안에 있는 무언가가 다른 인스턴스와 연결될 때 문제가 생긴다.
+
+<br>
+예시로 A라는 클래스 안에 A 타입을 가진 some 이라는 변수가 있다고 가정해보자.
+```swift
+class A {
+    var some : A?
+}
+```
+
+그리고 A 를 참조하는 a 라는 인스턴스와 b 라는 인스턴스가 있다.
+```swift
+var a : A()
+var B : A()
+```
+
+이때 a 안에 있는 some 이 b 가 되고, b 안에 있는 some 이 a 가 된다면 어떻게 될까?
+```swift
+a.some = b
+b.some = a
+```
+
+아래처럼 연결되게 된다.
+
+<img src="../../Image/RetainCycle-description1.png">
+
+여기서 만약 인스턴스들이 nil 이 된다면 어떻게 될까?
+
+아래와 같이 인스턴스들이 nil 이 되면서 프로퍼티였던 some과 some 이 남게 된다.
+
+이미 인스턴스들이 nil 이 되었기 떄문에, 프로퍼티끼리 연결된 것들은 영원히 해제되지 않고 남아있게 된다.
+
+이것이 쓸모없는 데이터가 되고, 메모리 누수를 발생시키는 것이다.
+
+<img src="../../Image/RetainCycle-description2.png">
+
+이렇게 메모리 누수를 방지하기 위해 상황에 맞게 ```strong, weak, unowned``` 를 이용해서 강하게 연결할지 약하게 연결할지를 결정해야 한다.
+
+
 ### 메모리 누수는 어떻게 찾을까?
-클래스가 메모리에서 해제될 때 deinit() 메서드가 호출되기 떄문에 해당 메서드를 통해서 찾을 수 있다.
+메모리가 해제될 때 deinit() 메서드가 호출되기 떄문에 해당 메서드를 통해서 찾을 수 있다.
 
 ```swift
 deinit {
