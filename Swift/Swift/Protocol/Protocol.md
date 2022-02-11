@@ -31,3 +31,18 @@ class A : superClass : AProtocol {
     //클래스 정의
 }
 ```
+
+## Protocol 생성
+- 프로토콜 프로퍼티
+- 프로토콜 메서드
+
+### 프로토콜 프로퍼티
+- 연산 프로퍼티만 가능하고, 이름과 타입, get, set 의 유무만 명시한다.
+- 항상 var 로 선언해야 한다.
+
+```swift
+protocol Student {
+    var name : String {get set}
+    var number : Int { get }
+}
+```
