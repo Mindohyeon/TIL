@@ -82,3 +82,21 @@ class AClass : AProtocol {
     }
 }
 ```
+
+SuperClass 의 이니셜라이저를 SubClass 에 상속하는 경우 <b>SubClass 의 이니셜라이저 앞에 ```required``` 키워드와 ```override``` 키워드를 붙여줘야 한다.</b>
+
+```swift
+protocol AProtocol {
+    init()
+}
+
+class ASuperClass {
+
+}
+
+class BSubClass : ASuperClass, AProtocol {
+    required override init() {
+        //구현
+    }
+}
+```
