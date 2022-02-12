@@ -59,6 +59,26 @@ protocol Student {
 protocol Person {
     func breathing()
     func sleeping(time : Int) -> Bool
+    static unc walking()
     mutating func walking()
 } 
+```
+
+### initializer Requirements
+프로토콜에서는 이니셜라이즈저도 정의할 수 있다.
+
+```swift
+protocol AProtocol {
+    init(AParameter : Int)
+}
+```
+
+프로토콜에서 특정 이니셜라이저가 필요하다고 명시해줬기 때문에 구현할 때에는 해당 이니셜라이저에 ```required``` 키워드를 붙여줘야 한다.
+
+```swift
+class AClass : AProtocol {
+    required init(AParameter : Int) {
+        //구현
+    }
+}
 ```
