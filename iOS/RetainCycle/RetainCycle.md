@@ -58,7 +58,6 @@ b.some = a
 
 이렇게 메모리 누수를 방지하기 위해 상황에 맞게 ```strong, weak, unowned``` 를 이용해서 강하게 연결할지 약하게 연결할지를 결정해야 한다.
 
-
 ### 메모리 누수는 어떻게 찾을까?
 메모리가 해제될 때 deinit() 메서드가 호출되기 떄문에 해당 메서드를 통해서 찾을 수 있다.
 
@@ -67,3 +66,6 @@ deinit {
     print("deinit ...")
 }
 ```
+
+#### 참고
+https://fomaios.tistory.com/entry/iOS-%EB%A9%B4%EC%A0%91%EC%A7%88%EB%AC%B8-Retain-Cycle%EC%9D%B4%EB%9E%80
