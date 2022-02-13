@@ -17,3 +17,5 @@ URLSessionDownloadTask 는 서버에서 응답으로 준 데이터를 파일에 
 
 ### URLSessionUploadTask
 URLSessionUploadTask 는 ```URLSessionDataTask``` 를 <b>상속</b>하고 있고, 데이터를 request body 에 넣어서 서버에 업로드하는 task 를 의미한다.
+
+전형적으로 HTTP POST, PUT 메서드를 통해서 디크스에서 웹서버로 파일을 전송할 때 이 Task 를 사용한다.

@@ -1,6 +1,6 @@
 # URLSession 
 iOS 앱에서는 서버와 통신하기 위해 애플은 ```URLSession``` 이라는 API를 제공하고 있다.
-URLSession 은 HTTP 를 포함한 몇 가지 프로토콜을 지원하고, 인증, 쿠키 관리, 캐시 관리 등을 지원한다.
+URLSession 은 HTTP / HTTPS 를 포함한 몇 가지 프로토콜을 지원하고, 인증, 쿠키 관리, 캐시 관리 등을 지원한다.
 
 ## URLSession의 Request 와 Response
 URLSession 은 다른 HTTP 통신과 마찬가지로, Request 와 Response 를 기본 구조로 가지고 있다.
