@@ -17,7 +17,7 @@ test = nil //retain count 가 1 감소되어 0이 되면서 메모리가 해제�
 - 자신이 참조는 하지만 <b>Weak 메모리를 해제시킬 수 있는 권한은 다른 클래스에 있다.</b>
 - 메모리가 해제될 경우에 자동으로 레퍼런스가 <b>nil로 초기화 해준다.</b>
 - weak 속성을 사용하는 객체는 항상 <b>Optional 타입이어야 한다.</b>(해당 객체가 nil일 수도 있기 때문이다.)
-- let 으로 선언할 수 없다.
+- <b>런타임 중 nil 로 변경될 수 있어야 하기 때문에</b> weak 키워드를 사용할 때에는 상수 형태가 아닌 변수 형태로 선언해주어야 한다.(즉, weak 키워드를 사용할 때는 <b>let 으로 선언할 수 없다.</b>)
 
 > ARC 가 weak 참조를 nil 로 설정할 때, 프로퍼티 옵저버(프로퍼티 감시자)는 호출되지 않는다.
 
@@ -37,6 +37,9 @@ weak는 객체를 추적하면서 객체가 사라지게 되면 nil 로 바꿔�
 - <b>strong</b> : 레퍼런스 카운트를 증가시켜 ARC 로 인한 메모리 해제를 피하고, 객체를 안전하게 사용하고자 할 때 쓴다.
 - <b>weak</b>: 대표적으로 retain cycle에 의해 메모리가 누수되는 문제를 막기 위해 사용되며, delegate 패턴이 있다.
 - <b>unowned</b> : 객체의 라이프사이클이 명확하고 개발자에 의해 제어 가능이 명확한 경우, weak Optional 타입 대신 사용하여 좀 더 간결한 코딩이 가능하다.
+
+약한 참조가 필요한 경우 weak 키워드만을 사용하고, guard let (또는 if let) 구문을 통해서 안전하게 옵셔널을 추출하는 것을 권장한다.
+
 
 *<b>ARC(Automatic Reference Counting)?<b> : [ARC란?]("https://github.com/Mindohyeon/TIL/blob/main/Swift/ARC/ARC.md")
 
