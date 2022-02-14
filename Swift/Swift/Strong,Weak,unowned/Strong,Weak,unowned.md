@@ -40,7 +40,6 @@ weak는 객체를 추적하면서 객체가 사라지게 되면 nil 로 바꿔�
 
 약한 참조가 필요한 경우 weak 키워드만을 사용하고, guard let (또는 if let) 구문을 통해서 안전하게 옵셔널을 추출하는 것을 권장한다.
 
-
 *<b>ARC(Automatic Reference Counting)?<b> : [ARC란?]("https://github.com/Mindohyeon/TIL/blob/main/Swift/ARC/ARC.md")
 
 <b>*라이프 사이클(LifeCycle)?</b> : 객체의 생존 기간. 객체가 생성된 후부터 폐기될 때까지의 기간을 뜻한다.
