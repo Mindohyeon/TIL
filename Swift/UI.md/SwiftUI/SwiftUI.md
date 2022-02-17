@@ -34,7 +34,9 @@ Command 를 누른 상태에서 Preview 의 TextView 를 클릭하면 SwiftUI In
 
 
 ## Combine View Using Stack (스택을 사용한 결합)
-SwiftUI 뷰를 생성할 때, 뷰의 body 프로퍼티에는 content, layout 및 동작을 기술한다. 하지만 이 body 프로퍼티는 <b>오직 하나의 싱글 뷰만 반환한다.</b> 그러나 스택을 사용하면 이 뷰들을 결합시킬 수 있다.
+SwiftUI 뷰를 생성할 때, 뷰의 body 프로퍼티에는 content, layout 및 동작을 기술한다. 하지만 이 body 프로퍼티는 <b>오직 하나의 싱글 뷰만 반환한다.</b> 그러나 스택을 사용하면 이 뷰들을 결합하고 임베드 할 수 있다.
+
+<b>*임베드 : 뷰 컨트롤러를 하위의 객체로 포함시키는 것</b>
 
 스택에는 총 3가지가 있다.
 - HStack (Horizontal Stack) : 수평 스택
