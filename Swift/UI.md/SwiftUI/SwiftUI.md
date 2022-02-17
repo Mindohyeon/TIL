@@ -26,6 +26,17 @@ struct ContentView: View {
 
 위 코드처럼 .font(.body), fontWeight(.medium) 와 같은 것들이 다 modifiers 다.
 
+SwiftUI Inspector 를 통해 변경하거나, 코드의 modifiers 를 수정하여 변경한다. 이러한 변경사항들을 Xcode는 즉각 업데이트한다. (바로바로 반영된다.)
+
 ## ContentView
-이 파일에서 오른쪽 빈 여백을 통해 Preview 를 볼 수 있다.
+이 파일에서 오른쪽 빈 여백을 통해 <b>Preview</b> 를 볼 수 있다.
 Command 를 누른 상태에서 Preview 의 TextView 를 클릭하면 SwiftUI Inspector 를 통해 스토리보드의 Attribute Inspector 와 마찬가지로 Text 내용이나 폰트, 패딩 등을 여러가지 설정할 수 있다. preview 에서 설정한 내용은 바로바로 코드에 반영된다.
+
+
+## Combine View Using Stack (스택을 사용한 결합)
+SwiftUI 뷰를 생성할 때, 뷰의 body 프로퍼티에는 content, layout 및 동작을 기술한다. 하지만 이 body 프로퍼티는 <b>오직 하나의 싱글 뷰만 반환한다.</b> 그러나 스택을 사용하면 이 뷰들을 결합시킬 수 있다.
+
+스택에는 총 3가지가 있다.
+- HStack (Horizontal Stack) : 수평 스택
+- VStack (Vertical Stack) : 수직 스택
+- ZStack : Z 축을 기준으로 뷰를 쌓는 스택
