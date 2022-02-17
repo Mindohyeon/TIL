@@ -11,6 +11,4 @@
 2. 문서 이름 되도록 영어로 만들기
 
 ## 바로가기
-
-- [Kotlin](https://github.com/Mindohyeon/TIL/tree/main/Kotlin)
 - [Swift](https://github.com/Mindohyeon/TIL/tree/main/Swift)
