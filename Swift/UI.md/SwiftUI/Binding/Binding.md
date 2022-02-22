@@ -4,7 +4,7 @@
 - @State
 - @Binding
 - ObservableObject
-- EnvironmentObject
+- @EnvironmentObject
 
 ### @State
 뷰가 접근 가능하도록 값을 가지고 있는 프로퍼티 래퍼(Property Wrapper) 이다.
@@ -24,3 +24,15 @@ $ 가 붙으면 프로퍼티 래퍼 자체를 받기 때문에 안에 있는 Wra
 
 ### @Binding
 단순히 @Binding 어노테이션으로 선언하여 초기화할 때 State 값을 받는 것만으로 여러 개의 뷰가 동시에 State 값을 참조할 수 있다.
+
+
+### @ObservableObject
+별도의 클래스를 만들고 ObservableObject 프로토콜을 상속받으면 SwiftUI 에서 사용할 수 있다.
+
+```swift
+class countClass : ObservableObject {
+    @Published var count : Int = 0
+}
+```
+
+Published 어노테이션은 값이 변경되었을 때 바로 View 에게 즉각적으로 알려준다.
