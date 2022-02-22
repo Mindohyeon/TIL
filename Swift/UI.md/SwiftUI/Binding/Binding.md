@@ -35,4 +35,21 @@ class countClass : ObservableObject {
 }
 ```
 
+```swift
+struct ContentView : View {
+
+    @ObservedObject var countClass = countClass()
+
+    var body : some View {
+        Vstack {
+            Text("self.countClass.count")
+
+            Button("숫자 증가") {
+                self.countClass.count += 1
+            }
+        }
+    }
+}
+```
+
 Published 어노테이션은 값이 변경되었을 때 바로 View 에게 즉각적으로 알려준다.
