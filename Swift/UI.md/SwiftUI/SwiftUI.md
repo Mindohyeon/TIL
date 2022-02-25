@@ -42,3 +42,8 @@ SwiftUI 뷰를 생성할 때, 뷰의 body 프로퍼티에는 content, layout 및
 - HStack (Horizontal Stack) : 수평 스택
 - VStack (Vertical Stack) : 수직 스택
 - ZStack : Z 축을 기준으로 뷰를 쌓는 스택
+
+
+## SwftUI 에서 ViewController 는 어디에 있을까?
+SwiftUI 에서 ViewController 는 사용되지 않는다. 그 대신에 새로운 프레임워크인 Combine 이 있다.
+이 Combine 이 ViewController 를 대신한다.
