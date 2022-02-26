@@ -13,8 +13,9 @@ Combine 은 발생한 이벤트에 대해 어떻게 가공하고 소비해줄지
 Combine 은 크게 <b>Publisher, Operator, Subscriber</b> 로 이루어져 있다.
 ```Subscriber``` 로부터 데이터를 요청받으면 ```Publisher```에서 데이터를 제공하고 중간에 ```Operator``` 를 거쳐 ```Subscriber``` 에게 전달된다.
 
+<img src="../../../Image/Publisher와Subscriber관계.png">
 
-
+Publisher 와 Subscriber 가 서로 데이터를 주고받을 때 항상 두 가지의 타입이 존재한다.
 
 ##### 참고
 - https://medium.com/harrythegreat/swift-combine-%EC%9E%85%EB%AC%B8%ED%95%98%EA%B8%B0-%EA%B0%80%EC%9D%B4%EB%93%9C-1-525ccb94af57
