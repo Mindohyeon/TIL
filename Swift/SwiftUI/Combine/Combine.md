@@ -17,6 +17,8 @@ Combine 은 크게 <b>Publisher, Operator, Subscriber</b> 로 이루어져 있�
 
 Publisher 와 Subscriber 가 서로 데이터를 주고받을 때 항상 두 가지의 타입이 존재한다.
 
+publisher 입장에서는 에러가 발생했을 경우 Failure 타입 그렇지 않으면 Output 타입을 전달한다. 
+
 ##### 참고
 - https://medium.com/harrythegreat/swift-combine-%EC%9E%85%EB%AC%B8%ED%95%98%EA%B8%B0-%EA%B0%80%EC%9D%B4%EB%93%9C-1-525ccb94af57
 - https://www.hohyeonmoon.com/blog/combine-introduction/
