@@ -22,7 +22,6 @@ ViewModel 은 사용자의 상호작용을 view 가 보내주면 그에 맞는 �
 기존의 view 는 단순히 유저 인터페이스를 표시하기 위한 로직을 담당하고, 그 외에는 메소드 호출 정도만 있는게 이상적인데, 
 ```ViewModel``` 은 <b>기존 UIKit을 import 할 필요도 없이 데이터 업데이트 및 뷰 요소를 업데이트 한다.</b>
 
-
 ## MVVM 의 장단점
 
 ### 장점
@@ -34,6 +33,8 @@ ViewModel 은 사용자의 상호작용을 view 가 보내주면 그에 맞는 �
 ## 정리
 <b>ViewMoel 에서는 주오 로직을 담당해서 ViewController 에 전달해주면 ViewController 에서는 오직 UI 만 바꿔준다.</b> 이것이 MVVM 의 원리이다.
 <b>ViewModel 은 view에 관한 어떠한 의존성이나 연결성도 없다.</b> 이것들이 다른 패턴들과의 차이인 것 같다.
+
+##### 뷰와 관련된 데이터 상태를 ViewModel 이 가지고 있고, ViewModel 이 변경 되면 연결된 ViewController 나 View 가 바뀌도록 처리한다.
 
 
  #### 참고
