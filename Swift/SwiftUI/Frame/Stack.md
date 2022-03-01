@@ -1,8 +1,4 @@
-# Spacer-aligment-padding
-
-- Spacer
-- aligment
-- padding
+# Stack
 
 ### Spacer
 배치된 뷰들의 간격을 제공하기 위해 스텍의 방향에 따라 확장, 축소 된다.
@@ -17,7 +13,7 @@ struct ContentView : View {
             Spacer()    
             Text("B")
 
-        }.frame(width: 100, height: 100, alignment: .center)
+        }
     }
 }
 ```
