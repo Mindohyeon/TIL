@@ -59,6 +59,10 @@ Published 어노테이션은 값이 변경되었을 때 바로 View 에게 즉�
 읽기 전용으로 특정 뷰에서 EnvironmentValues의 특정 요소를 읽어와 뷰 구성에 반영할 때 사용한다.
 
 
+## @EnvironmentObject
+- 바인딩 가능한 객체가 변경될 때마다 현재 view 를 무효화 하기 위해 상위 view(ancestor view) 에서 제공한 Binding 가능한 객체를 사용하는 dynamic view property
+
+- 반드시 environmentObject ( _: ) 메서드를 호출하여 상위 뷰에서 모델 객체를 설정해야 한다.
 
 #### 참고
 
