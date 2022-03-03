@@ -66,9 +66,6 @@ Published 어노테이션은 값이 변경되었을 때 바로 View 에게 즉�
 
 즉, <b>모든 view 가 읽을 수 있는 shared data </b> 이다.
 
-
-
-
 #### 참고
 
 - https://seons-dev.tistory.com/169
