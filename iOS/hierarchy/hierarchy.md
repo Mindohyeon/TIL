@@ -25,7 +25,10 @@
 - CoreMotion(기기 센서), Accounts(계정 관리), Foundation(데이터 관리) 등의 기능을 제공한다.
 
 
-
+## Media
+- 그래픽, 비디오, 오디오 등 멀티미디어 기능을 제공한다.
+- C 와 Object-C 가 혼합되어있는 형태이다.
+- AvFoundation(미디어 재생관련), MediaPlayer(플레이어), Core Image(이미지 가공) 등의 기능이 있다.
 
 #### 참고
 - https://brody.tistory.com/106
