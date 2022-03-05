@@ -30,6 +30,10 @@
 - C 와 Object-C 가 혼합되어있는 형태이다.
 - AvFoundation(미디어 재생관련), MediaPlayer(플레이어), Core Image(이미지 가공) 등의 기능이 있다.
 
+## Cocoa Touch
+- 화면의 그래픽 UI 및 터치의 기능을 제공한다.
+- UIKit(UI 구성, 터치), MapKit(지도), MessageUI(메세지, 이메일) 등의 기능이 있다.
+
 #### 참고
 - https://brody.tistory.com/106
 - https://iamcho2.github.io/2021/06/12/architecture-of-iOS
