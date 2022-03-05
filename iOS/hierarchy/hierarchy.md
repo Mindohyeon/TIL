@@ -17,3 +17,16 @@
 - iOS 의 거의 모든 기능의 기본적적인 부분을 관리한다.
 - C기반의 저수준의 API 로 이루어져 있다.
 - 데이터 처리, 네트워크, 파일 접근 등 시스템의 핵심적인 기능을 포함한다.
+
+
+## Core Service
+- Core OS 에서 제공하지 않는 기능을 포함하고 있다.
+- 내부 데이터 / 위치 / 센서 등의 기능을 제공한다.
+- CoreMotion(기기 센서), Accounts(계정 관리), Foundation(데이터 관리) 등의 기능을 제공한다.
+
+
+
+
+#### 참고
+- https://brody.tistory.com/106
+- https://iamcho2.github.io/2021/06/12/architecture-of-iOS
