@@ -1,6 +1,8 @@
 # TCP Connection (3-Way Handshake) 란?
 TCP는 장치들 사이에 논리적인 접속을 성립하기 위하여 Three-Way Handshake 를 사용한다.
 
+> 물리적인 개념이 아닌 논리적인 개념이다.
+
 - 클라이언트가 opne() 을 사용했을 때 사용된다.  즉, 열었을 때
 
 ## 역할
