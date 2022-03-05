@@ -29,7 +29,7 @@ struct ContentView : View {
     
     var body : some View {
 
-        VStack(aligment: .center, spacing: 10) {
+        VStack(alignment: .center, spacing: 10) {
 
             Text("First")
             Text("Second")
