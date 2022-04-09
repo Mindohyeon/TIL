@@ -25,3 +25,9 @@ textLabel.pin.below(of: titleLabel)
     //above 는 뷰의 가장 아래쪽에 위치한다. 이걸 제일 아래로 두고 아래서부터 쌓는 느낌
     .above(of: button).marginHorizontal(10)
 ```
+
+#### 참고
+
+[PinLayout Github](https://github.com/layoutBox/PinLayout#installation)
+
+https://zeddios.tistory.com/1243
