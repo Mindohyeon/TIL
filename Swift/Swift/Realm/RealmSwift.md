@@ -19,7 +19,6 @@ Up to Next Major 로 선택하고 최소 버전은 ```10.19.0```으로 해주면
 그리고 Add Package 하면 된다.
 
 
-
 ### MongoDB Realm Studio
 
 Open Realm file 을 클릭하고 현재 RealmSwift 를 사용하고 있는 파일의 경로를 찾아야 한다.
@@ -35,6 +34,7 @@ Open Realm file 을 클릭하고 현재 RealmSwift 를 사용하고 있는 파�
 ```Realm.Configuration.defaultConfiguration.fileURL!``` 이 키워드를 print 해주면 경로를 알려준다.
 
 위의 코드로 경로를 얻고
+ 그 경로를 finder 에서 ```command``` + ```shift``` + ```g``` 를 눌러서 복붙 해주면 해당하는 MongoDB Realm Studio 를 열 수 있다!
 
 <img src="../../../Image/RealmSwift-Column.png">
 
