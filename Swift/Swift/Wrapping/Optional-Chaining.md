@@ -26,17 +26,24 @@ print(name) //nil 출력
 ##### 이유는?
 
 현재 Family 클래스 안에 있는 child 가 nil 이기 때문이다!!
-
-Child 클래스의 name 이 Optional 이기 때문에 child 도 Optional 으로 선언할 수 밖에 없는데, 따라서 현재 nill 값이 들어가 있다.
+```swift
+class Family {
+    var child : Child? 
+}
+class Child {
+    var name : String?
+}
+```
+이 부분에서 Child 클래스는 Optional 로 선언되어있기 때문에 애초에 Child 클래스는 nil 로 초기화 되어있는 것이다.
 
 ```swift
 family.child?.name = "C"
 ```
-현재 Optional 타입이기 때문에 nil이 들어가 있어, "C"로 초기화하지 못 한 것이다.
+따라서 이 방법으로는 ```child.name``` 을 초기화 할 수 없다.
 
 ##### 모든 링크에 인스턴스 참조
 ```swift
- let family = Family()
+let family = Family()
 let child = Child()
 
 child.name = "dohyeon"
