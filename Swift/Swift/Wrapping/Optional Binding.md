@@ -1,6 +1,6 @@
 # Optional Binding 이란?
 
-옵셔널을 안전하게 처리하는 방법이다.
+옵셔널 변수의 값을 가져오는 방법이자, 옵셔널을 안전하게 처리하는 방법이다.
 
 ```swift
 let num : Int? = 0
@@ -61,6 +61,9 @@ print(type(of : a))
 만약 값이 존재하지 않는 Optional 값에 접근하려고 시도하면 런타임 에러가 발생한다. ```!``` 을 사용해서 Unwrapping 하기 위해서는 먼저 Optional 값이 nil 이 아니라는 것을 확실히 해야한다.
 
 - ```!``` 또한 Optional 이기 때문에 초기화해주지 않으면 ```?``` 와 마찬가지로 nil 이 들어간다.
+
+
+
 
 #### Optional Unwrapping 을 사용하기 위해서는 절대 Unwrapping 하고자 하는 변수가 nil 이면 안 된다.
 ```swift
