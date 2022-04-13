@@ -45,3 +45,6 @@ family.child = child
 let name = family.child?.name
 print(name) //Optional("dohyeon") 출력
 ```
+
+#### 참고
+https://zetal.tistory.com/entry/swift-%EA%B8%B0%EC%B4%88%EB%AC%B8%EB%B2%95-4-%EC%98%B5%EC%85%94%EB%84%90
