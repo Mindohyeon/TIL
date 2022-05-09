@@ -72,7 +72,7 @@ Scheduler는 Rx에서 DispatchQueue와 동일하다. 다만 훨씬 강력하고 
 Scheduler 를 통한 RxSwift 는 아래와 같이 동작한다.
 <img src="../../../Image/RxSwift-Scheduler.png">
 
-예를 들어,
+- 예를 들어,
 Network Subscription 은 Background Concurrent Scheduler 에서 먼저 Fetch Json 작업을 한 뒤, Process Json 작업을 하고 Main Thread Serial Scheduler 로 가서 UI display 작업을 한다.
 
 
