@@ -3,6 +3,8 @@ RxSwift(Reactive Extension Swift) 란 관찰 가능한 연속성(순차적) 형�
 
 - cocoa 코드에 결정적이고 비동기적인 방법을 이용하여 이벤트에 반응할 수 있도록 했다.
 
+> <b>비동기적으로 생기는 데이터를 completion 과 같은 클로저를 통해 전달하는 것이 아니라 return 값으로 전달하기 위해 만들어진 유틸리티</b>
+
 ## RxSwift 를 왜 쓸까?
 
 #### 1. <b>RxSwift 없이 비동기 처리</b>
