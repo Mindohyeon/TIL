@@ -4,9 +4,9 @@
 
 - 추가하려는 객체를 addSubView 했는지 확인해보자.
 
-## 레이아웃이 깨지는 이슈 파악하는 방법
+####레이아웃이 깨지는 이슈 파악하는 방법
 
-#### Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger. 
+> Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger. 
 
 - Breakpoint 를 만든다.
     1. show the Breakpoint navigator 를 클릭한다.
@@ -23,5 +23,7 @@
 ### 콜스택이란?
 
 [CallStack이란?](https://github.com/Mindohyeon/TIL/blob/main/Study/Call-Stack.md)
+
+#### 
 
 
