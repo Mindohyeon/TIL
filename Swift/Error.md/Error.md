@@ -44,3 +44,16 @@
 @available(iOS 13.4, *)
 ```
 이렇게 명시적으로 선언해주지 않아도 쓸 수 있다.
+
+---
+
+#### Version Error 2
+
+<img src="../../Image/Xcode-VersionError.png" style="width: 300px">
+
+### 위와 같은 에러가 발생했을 떈?
+
+어려울 거 없다.
+
+1. target -> general 로 들어간다.
+2. Identity 에서 Version 을 1.0 으로 초기화 해주면 해결된다.
