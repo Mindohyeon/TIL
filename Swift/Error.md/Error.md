@@ -57,3 +57,18 @@
 
 1. target -> general 로 들어간다.
 2. Identity 에서 Version 을 1.0 으로 초기화 해주면 해결된다.
+
+--- 
+### simulator 화면이 꽉 차지 않을 때
+이건 엄밀히 말하면 에러는 아니다. 단지 이 해결 방법을 찾기가 꽤나 까다로웠기 때문에 적어보고자 한다.
+<img src="../../Image/simulatorScreen-notfull.png" style="width: 300px">
+
+#### 만약 simulator 의 화면이 꽉 차지 않는 현상이 발생한다면?
+
+<img src="../../Image/simulatorScreen-notfull2.png">
+
+1. Target 으로 이동
+2. App Icons and Launch Images 에 있는 launch Screen File 에 ```LaunchScreen``` 이라고 적어주기만 하면 해결된다.
+
+##### 참고
+- [시뮬레이터 화면이 꽉 차지 않을 때](https://www.inflearn.com/questions/104721)
