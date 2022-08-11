@@ -36,5 +36,5 @@ Open Realm file 을 클릭하고 현재 RealmSwift 를 사용하고 있는 파�
 위의 코드로 경로를 얻고
  그 경로를 finder 에서 ```command``` + ```shift``` + ```g``` 를 눌러서 복붙 해주면 해당하는 MongoDB Realm Studio 를 열 수 있다!
 
-<img src="../../../Image/RealmSwift-Column.png">
+<img src="../../Image/RealmSwift-Column.png">
 
