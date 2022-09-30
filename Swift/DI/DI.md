@@ -18,8 +18,9 @@ DI 는 **의존성을 분리시켜 사용한다.** 그렇다면 의존성은 어
 
 > 쉽게 말하면 상위 계층이 하위 계층의 구현으로부터 독립적이어야 한다는 것이다.
 
-
+구현 방법은 ```interface``` 를 사용하는 것인데 iOS 는 ```protocol``` 로 구현한다.
 
 #### 참고
 - [DI Container](https://eunjin3786.tistory.com/233)
 - [DI 란?](https://medium.com/@jang.wangsu/di-dependency-injection-%EC%9D%B4%EB%9E%80-1b12fdefec4f)
+- [DIP: 의존성 역전 원칙이란?](https://dreamcoding.tistory.com/69)
