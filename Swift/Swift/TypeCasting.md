@@ -63,4 +63,30 @@ solution(_ s: String) -> Int {
 solution("1234")
 ```
 
-위 같은 상황에서 String 타입의 s 를 ㅑㅜㅅ
+위 같은 상황에서 String 타입의 s 를 Int로 형변환하여 return 하려고한다면, ```에러가 발생할 것이다.```
+
+
+#### 왜?
+String 데이터를 Int , Bool 형으로 변환 시 문자가 포함된 경우 기본 값을 설정해줘야한다.
+
+그렇기 때문에
+
+```swift
+solution(_ s: String) -> Int {
+    return Int(s)!
+}
+
+solution("1234")
+```
+
+이렇게 강제 언래핑 하거나,
+
+```swift
+solution(_ s: String) -> Int {
+    return Int(s) ?? 0
+}
+
+solution("1234")
+```
+
+이렇게 Int(s) 가 nil 일 때 기본 값을 설정해주면 된다.
