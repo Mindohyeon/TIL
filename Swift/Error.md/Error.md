@@ -72,3 +72,11 @@
 
 ##### 참고
 - [시뮬레이터 화면이 꽉 차지 않을 때](https://www.inflearn.com/questions/104721)
+
+---
+### 시뮬레이터 에러
+
+만약 아래와 같은 에러가 발생했다면
+<img src="../../Image/Simulator_Error.png">
+
+-> 시뮬레이터를 종료시키고 다시 빌드시키면 된다.
