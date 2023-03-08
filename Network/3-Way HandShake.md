@@ -1,9 +1,7 @@
 # TCP Connection (3-Way Handshake) 란?
 TCP는 장치들 사이에 논리적인 접속을 성립하기 위하여 Three-Way Handshake 를 사용한다.
 
-> 물리적인 개념이 아닌 논리적인 개념이다.
-
-- 클라이언트가 opne() 을 사용했을 때 사용된다.  즉, 열었을 때
+- 연결 요청을 보낼 때 (SYN)
 
 ## 역할
 - 양쪽 모두 데이터를 전송할 준비가 되었다는 것을 보장한다.
@@ -14,8 +12,8 @@ TCP는 장치들 사이에 논리적인 접속을 성립하기 위하여 Three-W
 
 <img src="Image/../../Image/225A964D52F1BB6917.png">    
 
-SYN : synchronize sequence numbers   
-ACK : acknowledgment
+SYN : synchronize sequence numbers = 연결요청
+ACK : acknowledgment = 응답
 
 ## 설명 
 
@@ -23,9 +21,11 @@ A -> B : 살아있어?
 B -> A : 응, 너는?   
 A -> B : 나도! 
 
+마지막으로 ```Client```가 ```Server```에게 ```ACK``` 를 보낸 이후부터는
+서로 연결이 이루어지고 데이터가 오갈 수 있다.
 # 4-Way HandShake
 
-- 클라이언트가 close() 를 사용했을 때 사용된다. 즉, 닫았을 때
+- 연결 종료 요청을 보낼 때 (FIN)
 
 <img src="Image/../../Image/99CDF7445B5950990D.png">
 
