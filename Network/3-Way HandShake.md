@@ -14,8 +14,7 @@ TCP는 장치들 사이에 논리적인 접속을 성립하기 위하여 Three-W
 
 SYN : synchronize sequence numbers = 연결요청
 ACK : acknowledgment = 응답
-
-## 설명 
+FIN : Finish = 연결종료 요청
 
 A -> B : 살아있어?   
 B -> A : 응, 너는?   
@@ -29,5 +28,9 @@ A -> B : 나도!
 
 <img src="Image/../../Image/99CDF7445B5950990D.png">
 
-### 주의
-> - 누가 먼저 close 를 요청하는지에 따라 상태가 달라질 수 있다. 
+--- 
+# Question
+#### TCP의 연결 설정 과정과 연결 종료 과정 단계가 차이나는 이유?
+- Client가 전송을 마쳤다 하더라고 Server는 아직 보낼 데이터가 남아있을 수 있음. 
+때문에 FIN 에 대한 ACK 만 보내고, 데이터를 모두 전송한 후 자신도 FIN 을 보내기 때문이다.
+
